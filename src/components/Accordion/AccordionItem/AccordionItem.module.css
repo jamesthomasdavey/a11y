@@ -36,7 +36,7 @@
 }
 
 .wrapper.expanded {
-  background-color: #353535;
+  background-color: var(--light-black);
 }
 
 .heading {
@@ -54,7 +54,7 @@
   position: relative;
   transition: color 0.6s ease, background-color 0.6s ease;
   text-align: left;
-  color: #111111;
+  color: var(--black);
 }
 
 .button:hover {
@@ -66,8 +66,8 @@
 }
 
 .button.darkMode {
-  color: #ffffff;
-  background-color: #353535;
+  color: var(--white);
+  background-color: var(--light-black);
 }
 
 .chevron {
@@ -84,6 +84,11 @@
 
 .paragraph {
   padding: 1.5rem 2rem 2rem 2rem;
+  color: var(--light-black);
+}
+
+.paragraph.darkMode {
+  color: var(--white);
 }
 
 @media (min-width: 540px) {

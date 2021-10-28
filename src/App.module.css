@@ -10,12 +10,12 @@
   line-height: 36px;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #111111;
+  color: var(--black);
   transition: 0.6s color ease;
 }
 
 .h2.darkMode {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .paragraph {

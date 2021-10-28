@@ -5,7 +5,7 @@
 }
 
 .wrapper.darkMode {
-  background-color: #333333;
+  background-color: var(--light-black);
 }
 
 .wrapperInner {

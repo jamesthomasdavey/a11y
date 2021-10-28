@@ -1,3 +1,14 @@
+/*************
+*** COLORS ***
+*************/
+
+:root {
+  --black: #111111;
+  --light-black: #353535;
+  --dark-gray: #666666;
+  --white: #ffffff;
+}
+
 /************
 *** FONTS ***
 ************/
@@ -140,14 +151,14 @@ table {
 body {
   transition: background-color 0.6s ease, color 0.6s ease;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  color: #666666;
+  color: var(--dark-gray);
   font-size: 16px;
   line-height: 24px;
 }
 
 body.darkMode {
-  background: #111111;
-  color: #ffffff;
+  background: var(--black);
+  color: var(--white);
 }
 
 ::selection {
@@ -155,12 +166,12 @@ body.darkMode {
 }
 
 body.darkMode ::selection {
-  background-color: navy;
+  background-color: #323299;
 }
 
 strong {
   font-weight: 700;
-  color: #333333;
+  color: var(--light-black);
   transition: color 0.6s ease;
 }
 
@@ -186,5 +197,5 @@ body.darkMode a {
 }
 
 body.darkMode a:hover {
-  color: #ffffff;
+  color: var(--white);
 }

@@ -44,7 +44,14 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
         role="region"
         {...getCollapseProps()}
       >
-        <p className={classes.paragraph}>{paragraph}</p>
+        <p
+          className={[
+            classes.paragraph,
+            darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+        >
+          {paragraph}
+        </p>
       </div>
     </li>
   );

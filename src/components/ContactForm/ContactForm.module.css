@@ -27,11 +27,11 @@ form.loading {
 .input {
   display: block;
   width: 100%;
-  border: 2px solid #666666;
+  border: 2px solid var(--dark-gray);
   padding: 10px 6px;
   font-size: 16px;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  color: #333333;
+  color: var(--light-black);
   transition: background-color 0.6s ease, border-color 0.6s ease;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -40,7 +40,7 @@ form.loading {
 
 .input.darkMode {
   border: 2px solid #999999;
-  background-color: #353535;
+  background-color: var(--light-black);
   color: #dddddd;
 }
 
@@ -57,7 +57,7 @@ form.loading {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   transition: color 0.6s ease, background-color 0.6s ease;
-  color: #111111;
+  color: var(--black);
 }
 
 .sendButton:hover {
@@ -66,8 +66,8 @@ form.loading {
 }
 
 .sendButton.darkMode {
-  color: #ffffff;
-  background-color: #353535;
+  color: var(--white);
+  background-color: var(--light-black);
 }
 
 .paperPlane {
