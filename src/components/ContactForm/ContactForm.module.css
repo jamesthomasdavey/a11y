@@ -80,6 +80,7 @@ textarea.input {
   height: 10rem;
   min-height: 10rem;
   resize: vertical;
+  max-height: 25rem;
 }
 
 .errorMessage {

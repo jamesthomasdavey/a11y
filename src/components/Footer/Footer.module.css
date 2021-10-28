@@ -17,6 +17,7 @@
 .header {
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--black);
 }
 
 @media (min-width: 320px) {
