@@ -176,87 +176,83 @@ class ContactForm extends Component {
         role="group"
         aria-labelledby="say-hello-heading"
       >
-        <div className={classes.nameField}>
-          <label className={classes.label} htmlFor="name">
-            Name:
-          </label>
-          <input
-            ref={(input) => {
-              this.nameInput = input;
-            }}
-            onChange={this.changeInputHandler}
-            type="text"
-            name="name"
-            id="name"
-            aria-describedby="nameError"
-            aria-invalid={this.state.errors.name ? "true" : undefined}
-            className={[
-              classes.input,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            maxLength="100"
-            value={this.state.name}
-            autoComplete="name"
-          />
-          <span
-            id="nameError"
-            className={[
-              classes.errorMessage,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-          >
-            {this.state.errors.name && (
-              <MdErrorOutline
-                className={classes.errorIcon}
-                aria-label="Error:"
-                role="img"
-                focusable="false"
-              />
-            )}{" "}
-            {this.state.errors.name && this.state.errors.name}
-          </span>
-        </div>
-        <div className={classes.emailField}>
-          <label className={classes.label} htmlFor="email">
-            Email:
-          </label>
-          <input
-            ref={(input) => {
-              this.emailInput = input;
-            }}
-            htmlFor="email"
-            type="email"
-            id="email"
-            aria-describedby="emailError"
-            aria-invalid={this.state.errors.email ? "true" : undefined}
-            name="email"
-            onChange={this.changeInputHandler}
-            className={[
-              classes.input,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            maxLength="100"
-            value={this.state.email}
-            autoComplete="email"
-          />
-          <span
-            id="emailError"
-            className={[
-              classes.errorMessage,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-          >
-            {this.state.errors.email && (
-              <MdErrorOutline
-                className={classes.errorIcon}
-                aria-label="Error:"
-                role="img"
-                focusable="false"
-              />
-            )}{" "}
-            {this.state.errors.email && this.state.errors.email}
-          </span>
-        </div>
+        <label className={classes.label} htmlFor="name">
+          Name:
+        </label>
+        <input
+          ref={(input) => {
+            this.nameInput = input;
+          }}
+          onChange={this.changeInputHandler}
+          type="text"
+          name="name"
+          id="name"
+          aria-describedby="nameError"
+          aria-invalid={this.state.errors.name ? "true" : undefined}
+          className={[
+            classes.input,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+          maxLength="100"
+          value={this.state.name}
+          autoComplete="name"
+        />
+        <span
+          id="nameError"
+          className={[
+            classes.errorMessage,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+        >
+          {this.state.errors.name && (
+            <MdErrorOutline
+              className={classes.errorIcon}
+              aria-label="Error:"
+              role="img"
+              focusable="false"
+            />
+          )}{" "}
+          {this.state.errors.name && this.state.errors.name}
+        </span>
+        <label className={classes.label} htmlFor="email">
+          Email:
+        </label>
+        <input
+          ref={(input) => {
+            this.emailInput = input;
+          }}
+          htmlFor="email"
+          type="email"
+          id="email"
+          aria-describedby="emailError"
+          aria-invalid={this.state.errors.email ? "true" : undefined}
+          name="email"
+          onChange={this.changeInputHandler}
+          className={[
+            classes.input,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+          maxLength="100"
+          value={this.state.email}
+          autoComplete="email"
+        />
+        <span
+          id="emailError"
+          className={[
+            classes.errorMessage,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+        >
+          {this.state.errors.email && (
+            <MdErrorOutline
+              className={classes.errorIcon}
+              aria-label="Error:"
+              role="img"
+              focusable="false"
+            />
+          )}{" "}
+          {this.state.errors.email && this.state.errors.email}
+        </span>
         <label className={classes.label} htmlFor="message">
           Message:
         </label>

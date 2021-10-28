@@ -1,0 +1,48 @@
+.wrapper {
+  width: 100%;
+  background-color: #efefef;
+  transition: background-color 0.6s ease;
+}
+
+.wrapper.darkMode {
+  background-color: #333333;
+}
+
+.wrapperInner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.header {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 320px) {
+  .wrapperInner {
+    width: 320px;
+  }
+}
+
+@media (min-width: 420px) {
+  .wrapperInner {
+    width: 353px;
+  }
+}
+
+@media (min-width: 540px) {
+  .wrapperInner {
+    width: 473px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapperInner {
+    width: 701px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapperInner {
+    width: 957px;
+  }
+}

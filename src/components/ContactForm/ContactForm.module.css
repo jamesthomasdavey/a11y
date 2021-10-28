@@ -25,6 +25,7 @@ form.loading {
 }
 
 .input {
+  display: block;
   width: 100%;
   border: 2px solid #666666;
   padding: 10px 6px;
@@ -32,6 +33,9 @@ form.loading {
   font-family: "Atkinson Hyperlegible", sans-serif;
   color: #333333;
   transition: background-color 0.6s ease, border-color 0.6s ease;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .input.darkMode {

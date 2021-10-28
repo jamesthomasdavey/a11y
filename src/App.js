@@ -5,6 +5,7 @@ import DarkModeSwitch from "./components/DarkModeSwitch/DarkModeSwitch";
 import Heading from "./components/Heading/Heading";
 import Accordion from "./components/Accordion/Accordion";
 import ContactForm from "./components/ContactForm/ContactForm";
+import Footer from "./components/Footer/Footer";
 
 import classes from "./App.module.css";
 
@@ -113,31 +114,21 @@ const App = () => {
               darkModeEnabled ? classes.darkMode : "",
             ].join(" ")}
           >
+            <span
+              className={[
+                classes.emoji,
+                darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+              aria-hidden="true"
+            >
+              👋
+            </span>{" "}
             Say hello!
           </h2>
           <ContactForm darkModeEnabled={darkModeEnabled} />
         </section>
       </main>
-      <footer>
-        <h2>Curious about the font?</h2>
-        <p>
-          It's called{" "}
-          <a
-            href="https://fonts.google.com/specimen/Atkinson+Hyperlegible"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Atkinson Hyperlegible{" "}
-            <BiLinkExternal
-              aria-label="Opens in new tab"
-              role="img"
-              focusable="false"
-            />
-          </a>
-          . It was carefully designed by a team of very smart people to improve
-          readability by focusing on letterform distinction.
-        </p>
-      </footer>
+      <Footer darkModeEnabled={darkModeEnabled} />
     </React.Fragment>
   );
 };

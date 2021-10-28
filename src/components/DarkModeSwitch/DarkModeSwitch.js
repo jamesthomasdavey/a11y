@@ -18,12 +18,12 @@ const DarkModeSwitch = ({ on, toggle }) => {
           " "
         )}
       ></span>
-      <span aria-hidden="true" className={classes.moon}>
-        <BsFillMoonStarsFill aria-hidden="true" focusable="false" />
-      </span>
-      <span aria-hidden="true" className={classes.sun}>
-        <BsSunFill aria-hidden="true" focusable="false" />
-      </span>
+      <BsFillMoonStarsFill
+        className={classes.moon}
+        aria-hidden="true"
+        focusable="false"
+      />
+      <BsSunFill className={classes.sun} aria-hidden="true" focusable="false" />
     </button>
   );
 };
