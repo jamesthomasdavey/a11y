@@ -1,87 +1,135 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BiLinkExternal } from "react-icons/bi";
 
 import DarkModeSwitch from "./components/DarkModeSwitch/DarkModeSwitch";
+import Heading from "./components/Heading/Heading";
+import Accordion from "./components/Accordion/Accordion";
+import ContactForm from "./components/ContactForm/ContactForm";
+
+import classes from "./App.module.css";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkModeEnabled, setDarkModeEnabled] = useState(false);
+
+  useEffect(() => {
+    if (
+      localStorage.darkModeEnabled === "true" ||
+      localStorage.darkModeEnabled === "false"
+    ) {
+      setDarkModeEnabled(
+        localStorage.darkModeEnabled === "true" ? true : false
+      );
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      console.log("nerds");
+      setDarkModeEnabled(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    darkModeEnabled
+      ? document.querySelector("body").classList.add("darkMode")
+      : document.querySelector("body").classList.remove("darkMode");
+  });
+
   return (
     <React.Fragment>
-      <DarkModeSwitch on={darkMode} toggle={() => setDarkMode(!darkMode)} />
-      <main>
-        <h1>Hi, I'm James.</h1>
-        <p>
-          I mostly work on ordering platforms for restaurants, but I do other
-          things too. As an Accessibility Engineer, I love the challenge of
+      <DarkModeSwitch
+        on={darkModeEnabled}
+        toggle={() => {
+          localStorage.setItem("darkModeEnabled", !darkModeEnabled);
+          setDarkModeEnabled(!darkModeEnabled);
+        }}
+      />
+      <main className={classes.main}>
+        <Heading darkModeEnabled={darkModeEnabled} />
+        <p className={classes.paragraph}>
+          I mostly work on accessibility for restaurants' online ordering
+          platforms, but I do other things too. As an{" "}
+          <strong>Accessibility Engineer</strong>, I love the challenge of
           deconstructing unfamiliar or complex interfaces into simplified
           operable parts. Few things satisfy me more than using a keyboard to
           navigate a newly-remediated site with the screen reader on.
         </p>
         <section>
-          <h2>I do web accessibility.</h2>
-          <p>
-            If accessibility starts at design, then accessible developing should
-            be as simple as using code to uphold the affordances and content
-            from the design. If accessibility doesn't start at design, it will
-            take some more work, but you still have options.
+          <h2
+            className={[
+              classes.h2,
+              darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+          >
+            I do web accessibility.
+          </h2>
+          <p className={classes.paragraph}>
+            Accessibility is often either ignored or only briefly mentioned in
+            front-end development courses and bootcamps. When developers hear
+            about accessibility, often much later in their career, they realize
+            they must unlearn and relearn basic techniques. My hope is to ease
+            this process as much as possible.
+            {/* I've stared at enough wireframes and tested enough interfaces to
+            intuitively know what semantic information is necessary and what
+            keystrokes would be the most predictable. */}{" "}
+            Show me an inaccessible product, and I'll show you approaches
+            ranging from most convenient to most robust. For more about my
+            qualifications,{" "}
+            <a
+              href="https://jamesthomasdavey.com/resume"
+              target="_blank"
+              rel="noreferrer"
+            >
+              check out my resume{" "}
+              <BiLinkExternal aria-label="Opens in new tab" />
+            </a>
+            .
           </p>
-          <p>
-            Whatever it is, I'll walk you through it. I've stared at enough
-            wireframes and tested enough interfaces to intuitively know what
-            semantic information is necessary and what keystrokes would be the
-            most predictable. Show me an inaccessible product, and I'll show you
-            a variety of approaches ranging from most convenient to most robust.
+          <p className={classes.paragraph}>
+            If accessibility is included during the design phase, then
+            accessible developing should be as simple as using code to uphold
+            the affordances and content from the design. If accessibility is
+            included later, it may take more work, but you still have options.
+            It's never too late to start accessibility, but it's never too early
+            either.
           </p>
         </section>
         <section>
-          <h2>How I can help.</h2>
-          <ul>
-            <li>
-              <h3>Testing</h3>
-              <p>
-                Already have a site that's up and running? I can audit that for
-                you. Using both automated and manual testing tools, I'll
-                estimate your overall risk, I'll tell you what is and isn't
-                accessible (tied to specific WCAG criteria), and most
-                importantly, I'll instruct you on fixing any issues.
-              </p>
-            </li>
-            <li>
-              <h3>Design Reviews</h3>
-              <p>
-                Get ahead by pushing accessibility to the left. I can analyze
-                your wireframes and tell you the problem areas, such as
-                insufficient contrast, spacing, color dependencies, and
-                potential usability issues from the perspective of a users with
-                disabilities.
-              </p>
-            </li>
-            <li>
-              <h3>Annotations</h3>
-              <p>
-                Handing designs to a development team? It's best not to make
-                them guess the elements and attributes they should use to ensure
-                that they're exposing the right information for assistive
-                technology users. I can add comments to your wireframes
-                conveying exactly that, removing any guesswork.
-              </p>
-            </li>
-            <li>
-              <h3>Guidance</h3>
-              <p>
-                Maybe you've attempted accessibility before and you need some
-                clarification on your learnings, or maybe you're new to
-                accessibility and have no idea where to begin. I can tell you
-                about WCAG and ADA, explain the differences between
-                accessibility and compliancy, or help you develop a road map for
-                a site that is usable for everyone. Or if you just want to nerd
-                out, that's cool too.
-              </p>
-            </li>
-          </ul>
+          <h2
+            className={[
+              classes.h2,
+              darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+          >
+            Things I can do.
+          </h2>
+          <Accordion darkModeEnabled={darkModeEnabled} />
         </section>
-        <h2>Say hello!</h2>
-        {/* Form */}
+        <section>
+          <h2
+            id="say-hello-heading"
+            className={[
+              classes.h2,
+              darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+          >
+            Say hello!
+          </h2>
+          <ContactForm darkModeEnabled={darkModeEnabled} />
+        </section>
       </main>
+      <footer>
+        <h2>Curious about the font?</h2>
+        <p>
+          It's called{" "}
+          <a
+            href="https://fonts.google.com/specimen/Atkinson+Hyperlegible"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Atkinson Hyperlegible{" "}
+            <BiLinkExternal aria-label="Opens in new tab" />
+          </a>
+          . It was carefully designed by a team of very smart people to improve
+          readability by focusing on letterform distinction.
+        </p>
+      </footer>
     </React.Fragment>
   );
 };

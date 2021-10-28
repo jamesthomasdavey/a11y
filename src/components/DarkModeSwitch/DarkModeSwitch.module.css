@@ -1,0 +1,61 @@
+.wrapper {
+  top: 22px;
+  right: 36px;
+  display: block;
+  transition: 0.3s all ease;
+  position: absolute;
+  width: 75px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.wrapper.light {
+  background: #ff5349;
+  border: 1.5px solid #ff5349;
+}
+
+.wrapper.dark {
+  background: black;
+  border: 1.5px solid #cccccc;
+  box-shadow: 0 0 20px 10px #777777;
+}
+
+.circle {
+  transition: 0.3s all ease;
+  display: block;
+  height: 32px;
+  width: 32px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.circle.left {
+  margin-left: 2.5px;
+}
+
+.circle.right {
+  margin-left: 36.5px;
+}
+
+.moon {
+  font-size: 18px;
+  display: block;
+  color: white;
+  position: absolute;
+  top: 9px;
+  left: 8.5px;
+  user-select: none;
+}
+
+.sun {
+  font-size: 21px;
+  display: block;
+  color: white;
+  position: absolute;
+  top: 7px;
+  left: 43px;
+  user-select: none;
+}

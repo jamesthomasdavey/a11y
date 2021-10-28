@@ -1,0 +1,86 @@
+.wrapper {
+  width: 100%;
+  max-width: 540px;
+}
+
+form.loading {
+  opacity: 50%;
+}
+
+.label {
+  display: block;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 1rem;
+  padding: 0.3rem 0;
+}
+
+.nameField {
+  width: 100%;
+}
+
+.emailField {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid #666666;
+  padding: 10px 6px;
+  font-size: 16px;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  color: #333333;
+  transition: background-color 0.6s ease, border-color 0.6s ease;
+}
+
+.input.darkMode {
+  border: 2px solid #999999;
+  background-color: #353535;
+  color: #dddddd;
+}
+
+.sendButton {
+  background-color: #ffc5bf;
+  border: none;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 24px;
+  display: block;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.6s ease, background-color 0.6s ease;
+}
+
+.sendButton.darkMode {
+  color: #ffffff;
+  background-color: #353535;
+}
+
+.paperPlane {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+textarea.input {
+  height: 10rem;
+}
+
+.errorMessage {
+  color: darkred;
+  position: relative;
+}
+
+.errorMessage.darkMode {
+  color: #dddddd;
+}
+
+.errorIcon {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}

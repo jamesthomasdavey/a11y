@@ -1,0 +1,13 @@
+.wrapper {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 72px;
+  transition: 0.6s color ease;
+  color: #111111;
+  line-height: 72px;
+  margin-bottom: 4rem;
+  cursor: default;
+}
+
+.wrapper.darkMode {
+  color: white;
+}
