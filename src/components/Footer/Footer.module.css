@@ -20,6 +20,10 @@
   color: var(--black);
 }
 
+.header.darkMode {
+  color: var(--white);
+}
+
 @media (min-width: 320px) {
   .wrapperInner {
     width: 320px;

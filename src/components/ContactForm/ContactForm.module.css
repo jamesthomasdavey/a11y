@@ -89,7 +89,7 @@ textarea.input {
 }
 
 .errorMessage.darkMode {
-  color: var(--dark-white);
+  color: #ff90ac;
 }
 
 .errorIcon {

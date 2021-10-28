@@ -12,7 +12,14 @@ const Footer = ({ darkModeEnabled }) => {
       ].join(" ")}
     >
       <div className={classes.wrapperInner}>
-        <h2 className={classes.header}>Curious about the font?</h2>
+        <h2
+          className={[
+            classes.header,
+            darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+        >
+          Curious about the font?
+        </h2>
         <p>
           It's called{" "}
           <a
