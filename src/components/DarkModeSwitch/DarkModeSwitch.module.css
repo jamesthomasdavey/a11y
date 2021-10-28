@@ -12,15 +12,30 @@
   cursor: pointer;
 }
 
+.wrapper:hover {
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
 .wrapper.light {
-  background: #ff5349;
+  background-color: #ff5349;
   border: 1.5px solid #ff5349;
+}
+
+.wrapper.light:hover {
+  background-color: #e54a41;
+  border: 1.5px solid #e54a41;
 }
 
 .wrapper.dark {
   background: black;
   border: 1.5px solid #cccccc;
   box-shadow: 0 0 20px 10px #777777;
+}
+
+.wrapper.dark:hover {
+  background-color: #303030;
+  border: 1.5px solid #eeeeee;
+  box-shadow: 0 0 20px 10px #888888;
 }
 
 .circle {

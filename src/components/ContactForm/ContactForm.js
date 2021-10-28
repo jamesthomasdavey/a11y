@@ -307,7 +307,7 @@ class ContactForm extends Component {
           />
         </button>
         <span id="redirect-warning">
-          Note: Upon submitting, you will be redirected to an external site.
+          Upon submitting, you will be redirected to an external site.
         </span>
         {serverErrorMessage}
         {successMessage}

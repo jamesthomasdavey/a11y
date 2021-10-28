@@ -41,7 +41,7 @@ form.loading {
 }
 
 .sendButton {
-  background-color: #ffc5bf;
+  background-color: #ffd6d2;
   border: none;
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
@@ -54,6 +54,11 @@ form.loading {
   margin-bottom: 0.75rem;
   transition: color 0.6s ease, background-color 0.6s ease;
   color: #111111;
+}
+
+.sendButton:hover {
+  background-color: #ffc5bf;
+  transition: background-color 0.3s ease;
 }
 
 .sendButton.darkMode {
