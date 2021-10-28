@@ -77,7 +77,11 @@ const App = () => {
               rel="noreferrer"
             >
               check out my resume{" "}
-              <BiLinkExternal aria-label="Opens in new tab" />
+              <BiLinkExternal
+                aria-label="Opens in new tab"
+                role="img"
+                focusable="false"
+              />
             </a>
             .
           </p>
@@ -124,7 +128,11 @@ const App = () => {
             rel="noreferrer"
           >
             Atkinson Hyperlegible{" "}
-            <BiLinkExternal aria-label="Opens in new tab" />
+            <BiLinkExternal
+              aria-label="Opens in new tab"
+              role="img"
+              focusable="false"
+            />
           </a>
           . It was carefully designed by a team of very smart people to improve
           readability by focusing on letterform distinction.

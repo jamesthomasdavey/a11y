@@ -210,6 +210,7 @@ class ContactForm extends Component {
                 className={classes.errorIcon}
                 aria-label="Error:"
                 role="img"
+                focusable="false"
               />
             )}{" "}
             {this.state.errors.name && this.state.errors.name}
@@ -250,6 +251,7 @@ class ContactForm extends Component {
                 className={classes.errorIcon}
                 aria-label="Error:"
                 role="img"
+                focusable="false"
               />
             )}{" "}
             {this.state.errors.email && this.state.errors.email}
@@ -286,6 +288,7 @@ class ContactForm extends Component {
               className={classes.errorIcon}
               aria-label="Error:"
               role="img"
+              focusable="false"
             />
           )}{" "}
           {this.state.errors.message && this.state.errors.message}
