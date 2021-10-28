@@ -10,8 +10,8 @@ form.loading {
 .label {
   display: block;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
   margin-top: 1rem;
   padding: 0.3rem 0;
 }
@@ -39,9 +39,9 @@ form.loading {
 }
 
 .input.darkMode {
-  border: 2px solid #999999;
+  border: 2px solid var(--gray);
   background-color: var(--light-black);
-  color: #dddddd;
+  color: var(--white);
 }
 
 .sendButton {
@@ -78,6 +78,8 @@ form.loading {
 
 textarea.input {
   height: 10rem;
+  min-height: 10rem;
+  resize: vertical;
 }
 
 .errorMessage {
@@ -86,7 +88,7 @@ textarea.input {
 }
 
 .errorMessage.darkMode {
-  color: #dddddd;
+  color: var(--dark-white);
 }
 
 .errorIcon {

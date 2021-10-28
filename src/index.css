@@ -5,8 +5,13 @@
 :root {
   --black: #111111;
   --light-black: #353535;
+  --lighter-black: #454545;
   --dark-gray: #666666;
+  --gray: #999999;
+  --dark-white: #ececec;
   --white: #ffffff;
+  --selection-color: #ffff00;
+  --dark-selection-color: #323299;
 }
 
 /************
@@ -158,15 +163,15 @@ body {
 
 body.darkMode {
   background: var(--black);
-  color: var(--white);
+  color: var(--dark-white);
 }
 
 ::selection {
-  background-color: yellow;
+  background-color: var(--selection-color);
 }
 
 body.darkMode ::selection {
-  background-color: #323299;
+  background-color: var(--dark-selection-color);
 }
 
 strong {
@@ -176,7 +181,7 @@ strong {
 }
 
 body.darkMode strong {
-  color: #dddddd;
+  color: var(--white);
 }
 
 a {
@@ -188,12 +193,12 @@ a {
 }
 
 a:hover {
-  color: #1e1e5b;
+  color: var(--black);
   transition: color 0.3s ease;
 }
 
 body.darkMode a {
-  color: #dddddd;
+  color: var(--dark-white);
 }
 
 body.darkMode a:hover {

@@ -70,6 +70,10 @@
   background-color: var(--light-black);
 }
 
+.button.darkMode:hover {
+  background-color: var(--lighter-black);
+}
+
 .chevron {
   position: absolute;
   top: 10px;
