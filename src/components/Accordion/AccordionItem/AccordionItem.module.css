@@ -44,7 +44,8 @@
   width: 100%;
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 24px;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   padding: 0.4rem 0.75rem;
   cursor: pointer;
   position: relative;
@@ -71,16 +72,18 @@
   background-color: var(--lighter-black);
 }
 
+.buttonHeading {
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .chevron {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  transition: transform 0.3s ease, top 0.3s ease;
+  align-self: center;
+  transition: transform 0.3s ease;
 }
 
 .chevron.down {
   transform: rotate(180deg);
-  top: 8px;
 }
 
 .paragraph {
@@ -99,13 +102,14 @@
   }
   .button {
     width: auto;
+    justify-content: left;
   }
   .chevron {
-    position: relative;
-    top: 4px;
-    left: 4px;
+    /* position: relative; */
+    /* top: 4px; */
+    /* left: 4px; */
   }
   .chevron.down {
-    top: 2px;
+    /* top: 2px; */
   }
 }

@@ -27,7 +27,8 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
           aria-controls={heading.split(" ").join("-").toLowerCase + "-panel"}
           {...getToggleProps()}
         >
-          {heading}
+          <span className={classes.buttonHeading}>{heading}</span>
+          {/* <div className={classes.chevronContainer} aria-hidden="true"> */}
           <FiChevronDown
             className={[classes.chevron, isExpanded ? classes.down : ""].join(
               " "
@@ -35,6 +36,7 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
             aria-hidden="true"
             focusable="false"
           />
+          {/* </div> */}
         </button>
       </h3>
       <div
