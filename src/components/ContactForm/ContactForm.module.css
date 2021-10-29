@@ -82,6 +82,7 @@ textarea.input {
 .errorMessage {
   color: darkred;
   position: relative;
+  display: block;
 }
 
 .errorMessage.darkMode {
@@ -93,6 +94,10 @@ textarea.input {
   display: inline-block;
   position: relative;
   top: 4px;
+}
+
+.charactersRemaining {
+  display: block;
 }
 
 .hiddenIcon {

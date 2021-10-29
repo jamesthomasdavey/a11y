@@ -150,7 +150,13 @@ class ContactForm extends Component {
     let charactersRemaining;
     if (this.state.errors.server) {
       serverErrorMessage = (
-        <span aria-live="assertive">
+        <span
+          aria-live="assertive"
+          className={[
+            classes.errorMessage,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
+        >
           <MdErrorOutline
             className={classes.errorIcon}
             aria-label="Error:"
@@ -162,16 +168,7 @@ class ContactForm extends Component {
       );
     }
     if (this.state.hasSubmitted) {
-      successMessage = (
-        <span aria-live="assertive">
-          <MdErrorOutline
-            className={classes.hiddenIcon}
-            aria-hidden="true"
-            focusable="false"
-          />
-          Redirecting...
-        </span>
-      );
+      successMessage = <span aria-live="assertive">Redirecting...</span>;
     }
     if (this.state.message) {
       charactersRemaining = this.state.errors.message ? (
@@ -181,6 +178,7 @@ class ContactForm extends Component {
           aria-live="polite"
           aria-atomic="true"
           id="message-characters-remaining"
+          className={classes.charactersRemaining}
         >
           <MdErrorOutline
             className={classes.hiddenIcon}
@@ -288,10 +286,13 @@ class ContactForm extends Component {
               this.messageTextarea = textarea;
             }}
             id="message"
-            aria-describedby={[
-              "message-characters-remaining",
-              this.state.errors.message ? "message-error" : "",
-            ].join(" ")}
+            aria-describedby={
+              this.state.errors.message
+                ? "message-error"
+                : this.state.message
+                ? "message-characters-remaining"
+                : undefined
+            }
             aria-invalid={this.state.errors.message ? "true" : undefined}
             name="message"
             onChange={this.changeInputHandler}
@@ -336,10 +337,11 @@ class ContactForm extends Component {
             />
           </button>
           <span id="redirect-warning">
-            Upon submitting, you will be redirected to an external site.
+            {successMessage
+              ? successMessage
+              : "Upon submitting, you will be redirected to an external site."}
           </span>
           {serverErrorMessage}
-          {successMessage}
         </div>
       </form>
     );
