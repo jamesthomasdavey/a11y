@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans:wght@600;700&display=swap");
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 32px 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.wrapper__inner {
+  width: 950px;
+  padding: 48px 92px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.nameHeading {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  font-size: 2rem;
+  line-height: 48px;
+  letter-spacing: 4px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 12px;
+  pointer-events: none;
+}
+
+.downloadLink {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  right: 92px;
+  padding: 6px 6px 0px 6px;
+}
+
+.downloadLink > img {
+  height: 32px;
+  transition: 0.2s transform ease;
+}
+
+.downloadLink:focus > img,
+.downloadLink:hover > img {
+  transform: scale(1.15);
+}
+
+.titleHeading {
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+.subtitleList {
+  margin-bottom: 40px;
+}
+
+.subtitleList > li {
+  display: inline-block;
+}
+
+.subtitleList > li > a {
+  color: #36845c;
+  text-decoration: underline;
+}
+
+.subtitleList > li > a:hover {
+  /* color: #36845c; */
+  text-decoration: none;
+}
+
+.subtitleList > li::before {
+  content: "|";
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.subtitleList > li:first-child::before {
+  content: "";
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.summary {
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.subHeading {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #767676;
+  font-size: 1rem;
+  pointer-events: none;
+  letter-spacing: 3.5px;
+  margin-bottom: 28px;
+}
+
+.dateRoleWrapper {
+  position: relative;
+}
+
+.dateHeading {
+  font-weight: 400;
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  pointer-events: none;
+}
+
+.roleHeading {
+  font-weight: 700;
+  color: #000000;
+  font-size: 1rem;
+  display: inline-block;
+  padding-left: 200px;
+  margin-bottom: 16px;
+  pointer-events: none;
+}
+
+.expContent {
+  margin-left: 200px;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.expContent > p {
+  margin-bottom: 16px;
+}
+
+.expContent > ul > li {
+  margin-left: 32px;
+  margin-bottom: 7px;
+}
+
+.expContent > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.educationSection {
+  position: relative;
+}
+
+.educationHeading {
+  position: absolute;
+  top: -1.5px;
+  margin-bottom: 0;
+}
+
+.schoolHeading {
+  margin-bottom: 0;
+}
+
+.educationContent {
+  margin-left: 200px;
+  margin-bottom: 36px;
+}
+
+.educationContent > p > span {
+  display: block;
+}
+
+.skillsList {
+  text-align: center;
+}
+
+.skillsList > li {
+  color: #000000;
+  display: inline-block;
+  background-color: #ddf1e7;
+  padding: 4px 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+  pointer-events: none;
+}
+
+@media (max-width: 960px) {
+  .wrapper__inner {
+    width: 748px;
+    padding: 48px 64px;
+  }
+  .subtitleList > li::before {
+    content: "|";
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .expContent {
+    margin-left: 0;
+  }
+  .educationContent {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper__inner {
+    width: 634px;
+    padding: 48px 54px;
+  }
+  .nameHeading {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .downloadLinkWrapper {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .downloadLink {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .downloadLink > img {
+    height: 24px;
+  }
+  .titleHeading {
+    text-align: center;
+  }
+  .subtitleList {
+    text-align: center;
+  }
+}
+
+@media (max-width: 654px) {
+  .wrapper__inner {
+    width: 554px;
+    padding: 48px 46px;
+  }
+  .subtitleList > li::before {
+    content: "";
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .subtitleList > li {
+    display: block;
+  }
+  .subHeading {
+    text-align: center;
+  }
+  .dateHeading {
+    position: relative;
+  }
+  .roleHeading {
+    padding-left: 0;
+    display: block;
+  }
+  .educationHeading {
+    position: relative;
+    top: 0;
+    margin-bottom: 28px;
+  }
+  .educationContent {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 553px) {
+  .wrapper__inner {
+    width: 100%;
+    padding: 48px 42px;
+  }
+}
