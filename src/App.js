@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BiLinkExternal } from "react-icons/bi";
+import { BiLinkExternal, BiMailSend } from "react-icons/bi";
 
 import DarkModeSwitch from "./components/DarkModeSwitch/DarkModeSwitch";
 import Heading from "./components/Heading/Heading";
@@ -44,12 +44,28 @@ const App = () => {
       <main className={classes.main}>
         <Heading darkModeEnabled={darkModeEnabled} />
         <p className={classes.paragraph}>
-          I mostly work on accessibility for restaurants' online ordering
-          platforms, but I do other things too. As an{" "}
-          <strong>Accessibility Engineer</strong>, I love the challenge of
-          deconstructing unfamiliar or complex interfaces into simplified
-          operable parts. Few things satisfy me more than using a keyboard to
-          navigate a newly-remediated site with the screen reader on.
+          I am a <strong>Web Developer</strong> and{" "}
+          <strong>Web Accessibility Specialist</strong> based in Seattle, doing
+          my part to build an inclusive web.
+        </p>
+        <p className={classes.paragraph}>
+          Currently working full-time as an{" "}
+          <strong>Accessibility Engineer</strong> for restaurants’ ordering
+          platforms, I have previously contributed to hundreds of websites and
+          apps in other spaces such as healthcare, entertainment, retail, and
+          software. For more about my skills and qualifications,{" "}
+          <a
+            href="https://jamesthomasdavey.com/resume"
+            target="_blank"
+            rel="noreferrer"
+          >
+            check out my resume{" "}
+            <BiLinkExternal
+              aria-label="Opens in new tab"
+              role="img"
+              focusable="false"
+            />
+          </a>
         </p>
         <section>
           <h2
@@ -61,38 +77,22 @@ const App = () => {
             I do web accessibility.
           </h2>
           <p className={classes.paragraph}>
-            Accessibility is often either ignored or only briefly mentioned in
-            front-end development courses and bootcamps. When developers hear
-            about accessibility, often much later in their career, they realize
-            they must unlearn and relearn basic techniques. My hope is to ease
-            this process as much as possible.
-            {/* I've stared at enough wireframes and tested enough interfaces to
-            intuitively know what semantic information is necessary and what
-            keystrokes would be the most predictable. */}{" "}
-            Show me an inaccessible product, and I'll show you approaches
-            ranging from most convenient to most robust. For more about my
-            qualifications,{" "}
-            <a
-              href="https://jamesthomasdavey.com/resume"
-              target="_blank"
-              rel="noreferrer"
-            >
-              check out my resume{" "}
-              <BiLinkExternal
-                aria-label="Opens in new tab"
-                role="img"
-                focusable="false"
-              />
-            </a>
-            .
+            I love the challenge of deconstructing unfamiliar or complex
+            interfaces into simplified operable parts, finding ways to linearize
+            two-dimentional layouts, and allowing assistive technology to read
+            and operate everything. Few things satisfy me more than using a
+            keyboard to navigate robustly-built websites with the screen reader
+            on.
           </p>
           <p className={classes.paragraph}>
-            If accessibility is included during the design phase, then
-            accessible developing should be as simple as using code to uphold
-            the affordances and content from the design. If accessibility is
-            included later, it may take more work, but you still have options.
-            It's never too late to start accessibility, but it's never too early
-            either.
+            Accessibility tends to show up late; whether in peoples' engineering
+            careers because the topic was either ignored or only briefly
+            mentioned in school or bootcamps, or in projects because users with
+            disabilities were not considered in the design and development
+            stages. Accessibility can therefore appear to be a daunting task,
+            but my hope is too ease this process as much as possible and involve
+            accessibility in the earliest stages. It's never too late to start
+            accessibility, but it's never too early either.
           </p>
         </section>
         <section>
@@ -125,6 +125,31 @@ const App = () => {
             </span>{" "}
             Say hello!
           </h2>
+          <p className={classes.paragraph}>
+            Email me at{" "}
+            <a href="mailto:james.davey@fastmail.com">
+              james.davey@fastmail.com{" "}
+              <BiMailSend
+                aria-label="Composes a new email"
+                role="img"
+                focusable="false"
+              />
+            </a>
+            ,{" "}
+            <a
+              href="https://www.linkedin.com/in/jamesthomasdavey/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              visit my LinkedIn{" "}
+              <BiLinkExternal
+                aria-label="Opens in new tab"
+                role="img"
+                focusable="false"
+              />
+            </a>
+            , or send a message using the form below:
+          </p>
           <ContactForm darkModeEnabled={darkModeEnabled} />
         </section>
       </main>
