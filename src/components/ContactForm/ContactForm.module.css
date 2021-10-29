@@ -27,11 +27,11 @@ form.loading {
 .input {
   display: block;
   width: 100%;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid var(--darker-gray);
   padding: 10px 6px;
   font-size: 16px;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  color: var(--dark-gray);
+  color: var(--darker-gray);
   transition: background-color 0.6s ease, border-color 0.6s ease;
 }
 
@@ -96,8 +96,13 @@ textarea.input {
   top: 4px;
 }
 
-.charactersRemaining {
+.secondaryInfo {
   display: block;
+  color: var(--dark-gray);
+}
+
+.secondaryInfo.darkMode {
+  color: var(--gray);
 }
 
 .hiddenIcon {

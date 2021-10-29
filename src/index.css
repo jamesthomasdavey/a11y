@@ -5,8 +5,9 @@
 :root {
   --black: #111111;
   --light-black: #353535;
-  --lighter-black: #454545;
-  --dark-gray: #616161;
+  --lighter-black: hsl(0, 0%, 27%);
+  --darker-gray: #606060;
+  --dark-gray: #767676;
   --gray: #999999;
   --dark-white: #ececec;
   --white: #ffffff;
@@ -169,7 +170,7 @@ table {
 body {
   transition: background-color 0.6s ease, color 0.6s ease;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  color: var(--dark-gray);
+  color: var(--darker-gray);
   font-size: 16px;
   line-height: 24px;
 }

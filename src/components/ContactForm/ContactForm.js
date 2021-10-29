@@ -178,7 +178,10 @@ class ContactForm extends Component {
           aria-live="polite"
           aria-atomic="true"
           id="message-characters-remaining"
-          className={classes.charactersRemaining}
+          className={[
+            classes.secondaryInfo,
+            this.props.darkModeEnabled ? classes.darkMode : "",
+          ].join(" ")}
         >
           <MdErrorOutline
             className={classes.hiddenIcon}
@@ -336,7 +339,13 @@ class ContactForm extends Component {
               focusable="false"
             />
           </button>
-          <span id="redirect-warning">
+          <span
+            id="redirect-warning"
+            className={[
+              classes.secondaryInfo,
+              this.props.darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+          >
             {successMessage
               ? successMessage
               : "Upon submitting, you will be redirected to an external site."}
