@@ -13,6 +13,9 @@ const ResumePrint = () => {
   document
     .querySelector("html")
     .setAttribute("style", "background-color: #8fd2af;");
+  document
+    .querySelector("body")
+    .setAttribute("style", "background-color: transparent");
   return (
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
