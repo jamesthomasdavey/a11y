@@ -78,7 +78,7 @@ const App = () => {
             I do web accessibility.
           </h2>
           <p className={classes.paragraph}>
-            I love the challenge of deconstructing unfamiliar or complex
+            I love the challenges of deconstructing unfamiliar or complex
             interfaces into simplified operable parts, finding ways to linearize
             two-dimentional layouts, and allowing assistive technology to read
             and operate everything. Few things satisfy me more than using a
@@ -91,7 +91,7 @@ const App = () => {
             mentioned in school or bootcamps, or in projects because users with
             disabilities were not considered in the design and development
             stages. Accessibility can therefore appear to be a daunting task,
-            but my hope is too ease this process as much as possible and involve
+            but my hope is to ease this process as much as possible and involve
             accessibility in the earliest stages. It's never too late to start
             accessibility, but it's never too early either.
           </p>
