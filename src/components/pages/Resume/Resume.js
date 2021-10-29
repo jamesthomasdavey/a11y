@@ -1,4 +1,5 @@
 import React from "react";
+import { BiMailSend } from "react-icons/bi";
 
 import classes from "./Resume.module.css";
 
@@ -8,7 +9,7 @@ import resumePdf from "./pdf/James Thomas Davey - Resume.pdf";
 import resumeData from "./resumeData";
 
 const ResumePrint = () => {
-  document.title = "Resume | James Thomas Davey";
+  document.title = "James Davey | Resume";
   document
     .querySelector("html")
     .setAttribute("style", "background-color: #8fd2af;");
@@ -30,7 +31,14 @@ const ResumePrint = () => {
           <ul className={classes.subtitleList}>
             <li>{resumeData.location}</li>
             <li>
-              <a href={`mailto:${resumeData.email}`}>{resumeData.email}</a>
+              <a href={`mailto:${resumeData.email}`}>
+                {resumeData.email}{" "}
+                <BiMailSend
+                  aria-label="Composes a new email"
+                  role="img"
+                  focusable="false"
+                />
+              </a>
             </li>
             <li>{resumeData.phoneNumber}</li>
           </ul>
