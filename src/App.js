@@ -66,6 +66,7 @@ const App = () => {
               focusable="false"
             />
           </a>
+          .
         </p>
         <section>
           <h2
