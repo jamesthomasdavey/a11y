@@ -150,18 +150,44 @@ class ContactForm extends Component {
     let charactersRemaining;
     if (this.state.errors.server) {
       serverErrorMessage = (
-        <p aria-live="assertive">{this.state.errors.server}</p>
+        <span aria-live="assertive">
+          <MdErrorOutline
+            className={classes.errorIcon}
+            aria-label="Error:"
+            role="img"
+            focusable="false"
+          />{" "}
+          {this.state.errors.server}
+        </span>
       );
     }
     if (this.state.hasSubmitted) {
-      successMessage = <p aria-live="assertive">Redirecting...</p>;
+      successMessage = (
+        <span aria-live="assertive">
+          <MdErrorOutline
+            className={classes.hiddenIcon}
+            aria-hidden="true"
+            focusable="false"
+          />
+          Redirecting...
+        </span>
+      );
     }
     if (this.state.message) {
       charactersRemaining = this.state.errors.message ? (
         ""
       ) : (
-        <span aria-live="polite" aria-atomic="true">
-          Characters remaining: {1000 - this.state.message.length}
+        <span
+          aria-live="polite"
+          aria-atomic="true"
+          id="message-characters-remaining"
+        >
+          <MdErrorOutline
+            className={classes.hiddenIcon}
+            aria-hidden="true"
+            focusable="false"
+          />
+          Characters remaining: {1000 - this.state.message.length}.
         </span>
       );
     }
@@ -173,143 +199,148 @@ class ContactForm extends Component {
         ].join(" ")}
         noValidate
         onSubmit={this.formSubmitHandler}
-        role="group"
-        aria-labelledby="say-hello-heading"
       >
-        <label className={classes.label} htmlFor="name">
-          Name:
-        </label>
-        <input
-          ref={(input) => {
-            this.nameInput = input;
-          }}
-          onChange={this.changeInputHandler}
-          type="text"
-          name="name"
-          id="name"
-          aria-describedby="nameError"
-          aria-invalid={this.state.errors.name ? "true" : undefined}
-          className={[
-            classes.input,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-          maxLength="100"
-          value={this.state.name}
-          autoComplete="name"
-        />
-        <span
-          id="nameError"
-          className={[
-            classes.errorMessage,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-        >
-          {this.state.errors.name && (
-            <MdErrorOutline
-              className={classes.errorIcon}
-              aria-label="Error:"
-              role="img"
-              focusable="false"
-            />
-          )}{" "}
-          {this.state.errors.name && this.state.errors.name}
-        </span>
-        <label className={classes.label} htmlFor="email">
-          Email:
-        </label>
-        <input
-          ref={(input) => {
-            this.emailInput = input;
-          }}
-          htmlFor="email"
-          type="email"
-          id="email"
-          aria-describedby="emailError"
-          aria-invalid={this.state.errors.email ? "true" : undefined}
-          name="email"
-          onChange={this.changeInputHandler}
-          className={[
-            classes.input,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-          maxLength="100"
-          value={this.state.email}
-          autoComplete="email"
-        />
-        <span
-          id="emailError"
-          className={[
-            classes.errorMessage,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-        >
-          {this.state.errors.email && (
-            <MdErrorOutline
-              className={classes.errorIcon}
-              aria-label="Error:"
-              role="img"
-              focusable="false"
-            />
-          )}{" "}
-          {this.state.errors.email && this.state.errors.email}
-        </span>
-        <label className={classes.label} htmlFor="message">
-          Message:
-        </label>
-        <textarea
-          ref={(textarea) => {
-            this.messageTextarea = textarea;
-          }}
-          id="message"
-          aria-describedby="messageError"
-          aria-invalid={this.state.errors.message ? "true" : undefined}
-          name="message"
-          onChange={this.changeInputHandler}
-          className={[
-            classes.input,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-          maxLength="1000"
-          value={this.state.message}
-        />
-        <span
-          id="messageError"
-          className={[
-            classes.errorMessage,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-        >
-          {this.state.errors.message && (
-            <MdErrorOutline
-              className={classes.errorIcon}
-              aria-label="Error:"
-              role="img"
-              focusable="false"
-            />
-          )}{" "}
-          {this.state.errors.message && this.state.errors.message}
-        </span>
-        {charactersRemaining}
-        <button
-          type="submit"
-          className={[
-            classes.sendButton,
-            this.props.darkModeEnabled ? classes.darkMode : "",
-          ].join(" ")}
-          aria-describedby="redirect-warning"
-        >
-          Send{" "}
-          <FiSend
-            className={classes.paperPlane}
-            aria-hidden="true"
-            focusable="false"
+        <div role="group" aria-labelledby="say-hello-heading">
+          <label className={classes.label} htmlFor="name">
+            Name:
+          </label>
+          <input
+            ref={(input) => {
+              this.nameInput = input;
+            }}
+            onChange={this.changeInputHandler}
+            type="text"
+            name="name"
+            id="name"
+            aria-describedby={this.state.errors.name ? "name-error" : undefined}
+            aria-invalid={this.state.errors.name ? "true" : undefined}
+            className={[
+              classes.input,
+              this.props.darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+            maxLength="100"
+            value={this.state.name}
+            autoComplete="name"
           />
-        </button>
-        <span id="redirect-warning">
-          Upon submitting, you will be redirected to an external site.
-        </span>
-        {serverErrorMessage}
-        {successMessage}
+          {this.state.errors.name && (
+            <span
+              id="name-error"
+              className={[
+                classes.errorMessage,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+            >
+              <MdErrorOutline
+                className={classes.errorIcon}
+                aria-label="Error:"
+                role="img"
+                focusable="false"
+              />{" "}
+              {this.state.errors.name}
+            </span>
+          )}
+          <label className={classes.label} htmlFor="email">
+            Email:
+          </label>
+          <input
+            ref={(input) => {
+              this.emailInput = input;
+            }}
+            htmlFor="email"
+            type="email"
+            id="email"
+            aria-describedby={
+              this.state.errors.email ? "email-error" : undefined
+            }
+            aria-invalid={this.state.errors.email ? "true" : undefined}
+            name="email"
+            onChange={this.changeInputHandler}
+            className={[
+              classes.input,
+              this.props.darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+            maxLength="100"
+            value={this.state.email}
+            autoComplete="email"
+          />
+          {this.state.errors.email && (
+            <span
+              id="email-error"
+              className={[
+                classes.errorMessage,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+            >
+              <MdErrorOutline
+                className={classes.errorIcon}
+                aria-label="Error:"
+                role="img"
+                focusable="false"
+              />{" "}
+              {this.state.errors.email}
+            </span>
+          )}
+          <label className={classes.label} htmlFor="message">
+            Message:
+          </label>
+          <textarea
+            ref={(textarea) => {
+              this.messageTextarea = textarea;
+            }}
+            id="message"
+            aria-describedby={[
+              "message-characters-remaining",
+              this.state.errors.message ? "message-error" : "",
+            ].join(" ")}
+            aria-invalid={this.state.errors.message ? "true" : undefined}
+            name="message"
+            onChange={this.changeInputHandler}
+            className={[
+              classes.input,
+              this.props.darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+            maxLength="1000"
+            value={this.state.message}
+          />
+          {this.state.errors.message && (
+            <span
+              id="message-error"
+              className={[
+                classes.errorMessage,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+            >
+              <MdErrorOutline
+                className={classes.errorIcon}
+                aria-label="Error:"
+                role="img"
+                focusable="false"
+              />{" "}
+              {this.state.errors.message}
+            </span>
+          )}
+          {charactersRemaining}
+          <button
+            type="submit"
+            className={[
+              classes.sendButton,
+              this.props.darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+            aria-describedby="redirect-warning"
+          >
+            Send{" "}
+            <FiSend
+              className={classes.paperPlane}
+              aria-hidden="true"
+              focusable="false"
+            />
+          </button>
+          <span id="redirect-warning">
+            Upon submitting, you will be redirected to an external site.
+          </span>
+          {serverErrorMessage}
+          {successMessage}
+        </div>
       </form>
     );
   }

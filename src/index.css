@@ -6,7 +6,7 @@
   --black: #111111;
   --light-black: #353535;
   --lighter-black: #454545;
-  --dark-gray: #666666;
+  --dark-gray: #616161;
   --gray: #999999;
   --dark-white: #ececec;
   --white: #ffffff;
@@ -111,6 +111,19 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 /* HTML5 display-role reset for older browsers */
 article,
