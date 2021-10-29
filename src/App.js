@@ -82,7 +82,7 @@ const App = () => {
             interfaces into simplified operable parts, finding ways to linearize
             two-dimentional layouts, and allowing assistive technology to read
             and operate everything. Few things satisfy me more than using a
-            keyboard to navigate robustly-built websites with the screen reader
+            keyboard to navigate a robustly-built website with the screen reader
             on.
           </p>
           <p className={classes.paragraph}>
