@@ -42,7 +42,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/resume" component={Resume} />
+        <Route path="/">
           <DarkModeSwitch
             on={darkModeEnabled}
             toggle={() => {
@@ -162,7 +163,6 @@ const App = () => {
           </main>
           <Footer darkModeEnabled={darkModeEnabled} />
         </Route>
-        <Route exact path="/resume" component={Resume} />
       </Switch>
     </Router>
   );
