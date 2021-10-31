@@ -184,9 +184,9 @@ body.darkMode {
   background-color: var(--selection-color);
 }
 
-body.darkMode ::selection {
+/* body.darkMode ::selection {
   background-color: var(--dark-selection-color);
-}
+} */
 
 strong {
   font-weight: 700;
@@ -217,5 +217,5 @@ body.darkMode a {
 }
 
 body.darkMode a:hover {
-  color: var(--white);
+  color: auto;
 }

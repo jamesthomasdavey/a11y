@@ -8,6 +8,10 @@
   color: #767676;
 }
 
+.wrapper ::selection {
+  background-color: yellow;
+}
+
 .wrapper__inner {
   width: 950px;
   padding: 48px 92px;

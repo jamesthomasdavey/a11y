@@ -51,7 +51,12 @@ const App = () => {
               setDarkModeEnabled(!darkModeEnabled);
             }}
           />
-          <main className={classes.main}>
+          <main
+            className={[
+              classes.main,
+              darkModeEnabled ? classes.darkMode : "",
+            ].join(" ")}
+          >
             <Heading darkModeEnabled={darkModeEnabled} />
             <p className={classes.paragraph}>
               I am a <strong>Web Developer</strong> and{" "}
