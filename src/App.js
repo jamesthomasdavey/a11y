@@ -100,7 +100,7 @@ const App = () => {
                 Implementing accessibility can therefore appear to be a daunting
                 task, but my hope is to ease this process as much as possible
                 and eventually rethink how we approach design and development.
-                It's never too late to start accessibility, but it's never too
+                It's never too late to work on accessibility, but it's never too
                 early either.
               </p>
             </section>
