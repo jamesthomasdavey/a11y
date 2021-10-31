@@ -56,14 +56,15 @@ const App = () => {
             <p className={classes.paragraph}>
               I am a <strong>Web Developer</strong> and{" "}
               <strong>Web Accessibility Specialist</strong> based in Seattle,
-              doing my part to build an inclusive web.
+              Washington, doing my part to build an inclusive web.
             </p>
             <p className={classes.paragraph}>
               Currently working full-time as an{" "}
-              <strong>Accessibility Engineer</strong> for restaurants’ ordering
-              platforms, I have previously contributed to hundreds of websites
-              and apps in other spaces such as healthcare, entertainment,
-              retail, and software. For more about my skills and qualifications,{" "}
+              <strong>Accessibility Engineer</strong> developing first-party
+              restaurant ordering platforms, I have previously contributed to
+              hundreds of websites and apps in other spaces such as healthcare,
+              entertainment, retail, and software. For more about my skills and
+              qualifications,{" "}
               <Link to="/resume" target="_blank" rel="noreferrer">
                 check out my resume{" "}
                 <BiLinkExternal
@@ -85,22 +86,22 @@ const App = () => {
               </h2>
               <p className={classes.paragraph}>
                 I love the challenges of deconstructing unfamiliar or complex
-                interfaces into simplified operable parts, finding ways to
-                linearize two-dimentional layouts, and allowing assistive
-                technology to read and operate everything. Few things satisfy me
-                more than using a keyboard to navigate a robustly-built website
-                with the screen reader on.
+                interfaces into simplified operable parts, linearizing
+                two-dimentional layouts, and allowing assistive technology to
+                read and interact with everything. Few things satisfy me more
+                than using a keyboard to navigate a robustly-built website with
+                the screen reader enabled.
               </p>
               <p className={classes.paragraph}>
-                Accessibility tends to show up late; whether in peoples'
-                engineering careers because the topic was either ignored or only
-                briefly mentioned in school or bootcamps, or in projects because
-                users with disabilities were not considered in the design and
-                development stages. Accessibility can therefore appear to be a
-                daunting task, but my hope is to ease this process as much as
-                possible and involve accessibility in the earliest stages. It's
-                never too late to start accessibility, but it's never too early
-                either.
+                Accessibility tends to show up late; whether in engineering
+                careers because the topic was either ignored or only briefly
+                mentioned people's education, or in projects because users with
+                disabilities were not considered during the earliest stages.
+                Implementing accessibility can therefore appear to be a daunting
+                task, but my hope is to ease this process as much as possible
+                and eventually rethink how we approach design and development.
+                It's never too late to start accessibility, but it's never too
+                early either.
               </p>
             </section>
             <section>
