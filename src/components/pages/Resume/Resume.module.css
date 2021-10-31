@@ -8,6 +8,10 @@
   color: #767676;
 }
 
+.wrapper ::-moz-selection {
+  background-color: yellow;
+}
+
 .wrapper ::selection {
   background-color: yellow;
 }

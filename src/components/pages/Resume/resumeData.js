@@ -7,7 +7,7 @@ const resumeData = {
     "Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.",
   workExperiences: [
     {
-      dates: "08/2021 - Present",
+      dates: "8/2021 - Present",
       company: "Lunchbox Technologies",
       title: "Senior Accessibility Engineer",
       summary:
@@ -18,7 +18,7 @@ const resumeData = {
       ],
     },
     {
-      dates: "01/2021 - 07/2021",
+      dates: "1/2021 - 7/2021",
       company: "CVS Health",
       title: "Accessibility Engineer Lead (Contract)",
       summary:
@@ -29,7 +29,7 @@ const resumeData = {
       ],
     },
     {
-      dates: "07/2020 - 01/2021",
+      dates: "7/2020 - 1/2021",
       company: "Kaiser Permanente",
       title: "Accessibility Design Specialist (Contract)",
       summary:
@@ -40,7 +40,7 @@ const resumeData = {
       ],
     },
     {
-      dates: "03/2019 - 01/2021",
+      dates: "3/2019 - 1/2021",
       company: "Level Access",
       title: "Senior Accessibility Analyst",
       summary:
