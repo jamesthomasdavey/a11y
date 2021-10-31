@@ -17,7 +17,7 @@ const Accordion = ({ darkModeEnabled }) => {
     {
       heading: "Handoff Annotations",
       paragraph:
-        "When handing designs off to a development team, it's best not to make them guess which semantic HTML and attributes they need to properly expose information for assistive technology users. I can add comments to your wireframes conveying exactly that, removing any guesswork.",
+        "When handing designs off to a development team, it's best not to make them guess which semantics and attributes they need for properly exposing information for assistive technology users. I can add comments to your wireframes conveying exactly that, removing any guesswork.",
     },
     {
       heading: "Guidance",
