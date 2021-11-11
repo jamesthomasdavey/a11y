@@ -99,7 +99,7 @@ const App = () => {
               </p>
               <p className={classes.paragraph}>
                 Accessibility tends to show up late; the topic is often ignored
-                during tech education and is often an afterthought in wep and
+                during tech education and is often an afterthought in web and
                 app projects. Implementing accessibility can therefore appear to
                 be a daunting task, but my hope is to ease this process as much
                 as possible and eventually rethink how we approach design and
