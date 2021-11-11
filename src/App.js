@@ -98,15 +98,14 @@ const App = () => {
                 the screen reader enabled.
               </p>
               <p className={classes.paragraph}>
-                Accessibility tends to show up late; whether in engineering
-                careers because the topic was either mostly or entirely ignored
-                during a person's education, or in projects because users with
-                disabilities were not considered during the earliest stages.
-                Implementing accessibility can therefore appear to be a daunting
-                task, but my hope is to ease this process as much as possible
-                and eventually rethink how we approach design and development.
-                It's never too late to work on accessibility, but it's never too
-                early either.
+                Accessibility tends to show up late; the topic is often ignored
+                during tech education and is often an afterthought in wep and
+                app projects. Implementing accessibility can therefore appear to
+                be a daunting task, but my hope is to ease this process as much
+                as possible and eventually rethink how we approach design and
+                development by including accessibility in the earliest possible
+                stages. It's never too late to work on accessibility, but it's
+                never too early either.
               </p>
             </section>
             <section>
