@@ -99,8 +99,8 @@ const App = () => {
               </p>
               <p className={classes.paragraph}>
                 Accessibility tends to show up late; whether in engineering
-                careers because the topic was either ignored or only briefly
-                mentioned people's education, or in projects because users with
+                careers because the topic was either mostly or entirely ignored
+                during a person's education, or in projects because users with
                 disabilities were not considered during the earliest stages.
                 Implementing accessibility can therefore appear to be a daunting
                 task, but my hope is to ease this process as much as possible
