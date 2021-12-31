@@ -333,11 +333,13 @@ class ContactForm extends Component {
             aria-describedby="redirect-warning"
           >
             Send{" "}
-            <FiSend
-              className={classes.paperPlane}
-              aria-hidden="true"
-              focusable="false"
-            />
+            <div className={classes.paperPlaneWrapper}>
+              <FiSend
+                className={classes.paperPlane}
+                aria-hidden="true"
+                focusable="false"
+              />
+            </div>
           </button>
           <span
             id="redirect-warning"

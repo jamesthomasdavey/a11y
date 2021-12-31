@@ -66,10 +66,14 @@ form.loading {
   background-color: var(--light-black);
 }
 
-.paperPlane {
+.paperPlaneWrapper {
   font-size: 18px;
   display: inline-block;
   margin-left: 2px;
+}
+
+.paperPlane {
+  /* display: inline-block; */
 }
 
 textarea.input {
