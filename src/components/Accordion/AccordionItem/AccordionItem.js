@@ -35,6 +35,7 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
               )}
               aria-hidden="true"
               focusable="false"
+              preserveAspectRatio="none"
             />
           </div>
         </button>

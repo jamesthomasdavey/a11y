@@ -104,8 +104,8 @@ const App = () => {
                 be a daunting task, but my hope is to ease this process as much
                 as possible and eventually rethink how we approach design and
                 development by including accessibility in the earliest possible
-                stages. It's never too late to work on accessibility, but it's
-                never too early either.
+                stages.
+                {/* It's never too late to work on accessibility, but it's never too early either. */}
               </p>
             </section>
             <section>

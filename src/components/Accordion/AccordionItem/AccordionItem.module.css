@@ -88,6 +88,7 @@
   align-self: center;
   transition: transform 0.3s ease;
   outline: none;
+  max-height: 100%;
 }
 
 .chevron.down {
