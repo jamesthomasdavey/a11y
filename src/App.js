@@ -28,7 +28,6 @@ const App = () => {
         localStorage.darkModeEnabled === "true" ? true : false
       );
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      console.log("nerds");
       setDarkModeEnabled(true);
     }
   }, []);
