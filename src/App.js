@@ -139,10 +139,10 @@ const App = () => {
               </h2>
               <p className={classes.paragraph}>
                 Email me at{" "}
-                <a href="mailto:james.davey@fastmail.com">
-                  james.davey@fastmail.com{" "}
+                <a href="mailto:james.t.davey@gmail.com">
+                  james.t.davey@gmail.com{" "}
                   <BiMailSend
-                    aria-label="Composes a new email"
+                    aria-label="Composes email"
                     role="img"
                     focusable="false"
                   />
