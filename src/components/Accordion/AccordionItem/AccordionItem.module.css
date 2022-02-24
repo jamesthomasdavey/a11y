@@ -35,6 +35,14 @@
   background-color: #abdee6;
 }
 
+.wrapper.color4,
+.button.color4 {
+  background-color: #ffe8c8;
+}
+.button.color4:hover {
+  background-color: #ffd8a1;
+}
+
 .wrapper.expanded {
   background-color: var(--light-black);
 }

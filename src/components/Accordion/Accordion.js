@@ -14,6 +14,11 @@ const Accordion = ({ darkModeEnabled }) => {
       paragraph:
         "Get ahead by pushing accessibility to the left. I can analyze wireframes and tell you the problem areas, such as insufficient contrast, spacing, color dependencies, and potential layout issues from the perspective of users with disabilities.",
     },
+    // {
+    //   heading: "Planning",
+    //   paragraph:
+    //     "An accessible component library is paramount for a consistent user experience. Even a perfectly semantic page structure can quickly be nullified if users cannot understand or operate the components within it. By focusing on accessible building blocks of all sizes, I can help you build a seamless experience for all users.",
+    // },
     {
       heading: "Handoff Annotations",
       paragraph:

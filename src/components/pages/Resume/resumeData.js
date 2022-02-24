@@ -1,7 +1,7 @@
 const resumeData = {
   name: "James Thomas Davey",
   location: "Seattle, WA",
-  email: "james.davey@fastmail.com",
+  email: "james.t.davey@gmail.com",
   phoneNumber: "(415)-307-8703",
   summary:
     "Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.",
