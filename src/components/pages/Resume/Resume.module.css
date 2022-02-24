@@ -8,6 +8,10 @@
   color: #767676;
 }
 
+.wrapper *:focus {
+  outline: 3px solid #003580 !important;
+}
+
 .wrapper ::-moz-selection {
   background-color: yellow;
 }

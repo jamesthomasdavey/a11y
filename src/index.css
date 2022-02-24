@@ -219,3 +219,11 @@ body.darkMode a {
 body.darkMode a:hover {
   color: auto;
 }
+
+*:focus {
+  outline: 3px solid var(--dark-selection-color);
+}
+
+body.darkMode *:focus {
+  outline: 3px solid var(--selection-color);
+}
