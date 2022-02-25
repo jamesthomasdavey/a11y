@@ -1,6 +1,7 @@
 import React from "react";
 import useCollapse from "react-collapsed";
 import { FiChevronDown } from "react-icons/fi";
+import { FocusRing } from "@react-aria/focus";
 
 import classes from "./AccordionItem.module.css";
 
@@ -18,27 +19,30 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
         className={classes.heading}
         id={heading.toLowerCase().split(" ").join("-") + "-heading"}
       >
-        <button
-          className={[
-            classes.button,
-            darkModeEnabled ? classes.darkMode : classes[`color${index}`],
-            isExpanded ? classes.expanded : "",
-          ].join(" ")}
-          aria-controls={heading.split(" ").join("-").toLowerCase + "-panel"}
-          {...getToggleProps()}
-        >
-          <div className={classes.buttonInner}>
-            <span className={classes.buttonHeading}>{heading}</span>
-            <FiChevronDown
-              className={[classes.chevron, isExpanded ? classes.down : ""].join(
-                " "
-              )}
-              aria-hidden="true"
-              focusable="false"
-              preserveAspectRatio="none"
-            />
-          </div>
-        </button>
+        <FocusRing focusRingClass="focus-ring">
+          <button
+            className={[
+              classes.button,
+              darkModeEnabled ? classes.darkMode : classes[`color${index}`],
+              isExpanded ? classes.expanded : "",
+            ].join(" ")}
+            aria-controls={heading.split(" ").join("-").toLowerCase + "-panel"}
+            {...getToggleProps()}
+          >
+            <div className={classes.buttonInner}>
+              <span className={classes.buttonHeading}>{heading}</span>
+              <FiChevronDown
+                className={[
+                  classes.chevron,
+                  isExpanded ? classes.down : "",
+                ].join(" ")}
+                aria-hidden="true"
+                focusable="false"
+                preserveAspectRatio="none"
+              />
+            </div>
+          </button>
+        </FocusRing>
       </h3>
       <div
         aria-labelledby={

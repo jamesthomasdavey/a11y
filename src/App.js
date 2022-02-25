@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { BiLinkExternal, BiMailSend } from "react-icons/bi";
+import { FocusRing } from "@react-aria/focus";
 
 // components
 import DarkModeSwitch from "./components/DarkModeSwitch/DarkModeSwitch";
@@ -69,14 +70,16 @@ const App = () => {
               hundreds of websites and apps in other spaces such as healthcare,
               entertainment, retail, and software. For more about my skills and
               qualifications,{" "}
-              <Link to="/resume" target="_blank" rel="noreferrer">
-                check out my resume{" "}
-                <BiLinkExternal
-                  aria-label="Opens in new tab"
-                  role="img"
-                  focusable="false"
-                />
-              </Link>
+              <FocusRing focusRingClass="focus-ring">
+                <Link to="/resume" target="_blank" rel="noreferrer">
+                  check out my resume{" "}
+                  <BiLinkExternal
+                    aria-label="Opens in new tab"
+                    role="img"
+                    focusable="false"
+                  />
+                </Link>
+              </FocusRing>
               .
             </p>
             <section>
@@ -139,27 +142,31 @@ const App = () => {
               </h2>
               <p className={classes.paragraph}>
                 Email me at{" "}
-                <a href="mailto:james.davey@fastmail.com">
-                  james.davey@fastmail.com{" "}
-                  <BiMailSend
-                    aria-label="Composes a new email"
-                    role="img"
-                    focusable="false"
-                  />
-                </a>
+                <FocusRing focusRingClass="focus-ring">
+                  <a href="mailto:james.davey@fastmail.com">
+                    james.davey@fastmail.com{" "}
+                    <BiMailSend
+                      aria-label="Composes a new email"
+                      role="img"
+                      focusable="false"
+                    />
+                  </a>
+                </FocusRing>
                 ,{" "}
-                <a
-                  href="https://www.linkedin.com/in/jamesthomasdavey/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  visit my LinkedIn{" "}
-                  <BiLinkExternal
-                    aria-label="Opens in new tab"
-                    role="img"
-                    focusable="false"
-                  />
-                </a>
+                <FocusRing focusRingClass="focus-ring">
+                  <a
+                    href="https://www.linkedin.com/in/jamesthomasdavey/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    visit my LinkedIn{" "}
+                    <BiLinkExternal
+                      aria-label="Opens in new tab"
+                      role="img"
+                      focusable="false"
+                    />
+                  </a>
+                </FocusRing>
                 , or send a message using the form below:
               </p>
               <ContactForm darkModeEnabled={darkModeEnabled} />

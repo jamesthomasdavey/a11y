@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import isEmail from "is-email";
 import { MdErrorOutline } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
+import { FocusRing } from "@react-aria/focus";
 
 import classes from "./ContactForm.module.css";
 
@@ -205,24 +206,28 @@ class ContactForm extends Component {
           <label className={classes.label} htmlFor="name">
             Name:
           </label>
-          <input
-            ref={(input) => {
-              this.nameInput = input;
-            }}
-            onChange={this.changeInputHandler}
-            type="text"
-            name="name"
-            id="name"
-            aria-describedby={this.state.errors.name ? "name-error" : undefined}
-            aria-invalid={this.state.errors.name ? "true" : undefined}
-            className={[
-              classes.input,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            maxLength="100"
-            value={this.state.name}
-            autoComplete="name"
-          />
+          <FocusRing focusRingClass="focus-ring">
+            <input
+              ref={(input) => {
+                this.nameInput = input;
+              }}
+              onChange={this.changeInputHandler}
+              type="text"
+              name="name"
+              id="name"
+              aria-describedby={
+                this.state.errors.name ? "name-error" : undefined
+              }
+              aria-invalid={this.state.errors.name ? "true" : undefined}
+              className={[
+                classes.input,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+              maxLength="100"
+              value={this.state.name}
+              autoComplete="name"
+            />
+          </FocusRing>
           {this.state.errors.name && (
             <span
               id="name-error"
@@ -243,27 +248,29 @@ class ContactForm extends Component {
           <label className={classes.label} htmlFor="email">
             Email:
           </label>
-          <input
-            ref={(input) => {
-              this.emailInput = input;
-            }}
-            htmlFor="email"
-            type="email"
-            id="email"
-            aria-describedby={
-              this.state.errors.email ? "email-error" : undefined
-            }
-            aria-invalid={this.state.errors.email ? "true" : undefined}
-            name="email"
-            onChange={this.changeInputHandler}
-            className={[
-              classes.input,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            maxLength="100"
-            value={this.state.email}
-            autoComplete="email"
-          />
+          <FocusRing focusRingClass="focus-ring">
+            <input
+              ref={(input) => {
+                this.emailInput = input;
+              }}
+              htmlFor="email"
+              type="email"
+              id="email"
+              aria-describedby={
+                this.state.errors.email ? "email-error" : undefined
+              }
+              aria-invalid={this.state.errors.email ? "true" : undefined}
+              name="email"
+              onChange={this.changeInputHandler}
+              className={[
+                classes.input,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+              maxLength="100"
+              value={this.state.email}
+              autoComplete="email"
+            />
+          </FocusRing>
           {this.state.errors.email && (
             <span
               id="email-error"
@@ -284,28 +291,30 @@ class ContactForm extends Component {
           <label className={classes.label} htmlFor="message">
             Message:
           </label>
-          <textarea
-            ref={(textarea) => {
-              this.messageTextarea = textarea;
-            }}
-            id="message"
-            aria-describedby={
-              this.state.errors.message
-                ? "message-error"
-                : this.state.message
-                ? "message-characters-remaining"
-                : undefined
-            }
-            aria-invalid={this.state.errors.message ? "true" : undefined}
-            name="message"
-            onChange={this.changeInputHandler}
-            className={[
-              classes.input,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            maxLength="1000"
-            value={this.state.message}
-          />
+          <FocusRing focusRingClass="focus-ring">
+            <textarea
+              ref={(textarea) => {
+                this.messageTextarea = textarea;
+              }}
+              id="message"
+              aria-describedby={
+                this.state.errors.message
+                  ? "message-error"
+                  : this.state.message
+                  ? "message-characters-remaining"
+                  : undefined
+              }
+              aria-invalid={this.state.errors.message ? "true" : undefined}
+              name="message"
+              onChange={this.changeInputHandler}
+              className={[
+                classes.input,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+              maxLength="1000"
+              value={this.state.message}
+            />
+          </FocusRing>
           {this.state.errors.message && (
             <span
               id="message-error"
@@ -324,23 +333,25 @@ class ContactForm extends Component {
             </span>
           )}
           {charactersRemaining}
-          <button
-            type="submit"
-            className={[
-              classes.sendButton,
-              this.props.darkModeEnabled ? classes.darkMode : "",
-            ].join(" ")}
-            aria-describedby="redirect-warning"
-          >
-            Send{" "}
-            <div className={classes.paperPlaneWrapper}>
-              <FiSend
-                className={classes.paperPlane}
-                aria-hidden="true"
-                focusable="false"
-              />
-            </div>
-          </button>
+          <FocusRing focusRingClass="focus-ring">
+            <button
+              type="submit"
+              className={[
+                classes.sendButton,
+                this.props.darkModeEnabled ? classes.darkMode : "",
+              ].join(" ")}
+              aria-describedby="redirect-warning"
+            >
+              Send{" "}
+              <div className={classes.paperPlaneWrapper}>
+                <FiSend
+                  className={classes.paperPlane}
+                  aria-hidden="true"
+                  focusable="false"
+                />
+              </div>
+            </button>
+          </FocusRing>
           <span
             id="redirect-warning"
             className={[

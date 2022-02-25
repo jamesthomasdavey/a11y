@@ -115,15 +115,11 @@ video {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 /* HTML5 display-role reset for older browsers */
@@ -180,6 +176,10 @@ body.darkMode {
   color: var(--dark-white);
 }
 
+::-moz-selection {
+  background-color: var(--selection-color);
+}
+
 ::selection {
   background-color: var(--selection-color);
 }
@@ -220,10 +220,19 @@ body.darkMode a:hover {
   color: auto;
 }
 
-*:focus {
+/* *:focus {
   outline: 3px solid var(--dark-selection-color);
 }
 
 body.darkMode *:focus {
+  outline: 3px solid var(--selection-color);
+} */
+
+.focus-ring {
+  outline-offset: 1px;
+  outline: 3px solid var(--dark-selection-color);
+}
+
+body.darkMode .focus-ring {
   outline: 3px solid var(--selection-color);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { BiMailSend } from "react-icons/bi";
+import { FocusRing } from "@react-aria/focus";
 
 import classes from "./Resume.module.css";
 
@@ -21,27 +22,31 @@ const ResumePrint = () => {
       <main className={classes.wrapper__inner}>
         <h1 className={classes.nameHeading}>{resumeData.name}</h1>
         <div className={classes.downloadLinkWrapper}>
-          <a
-            className={classes.downloadLink}
-            href={resumePdf}
-            download="James Thomas Davey - Resume"
-          >
-            <img alt="Download Resume" src={downloadicon} />
-          </a>
+          <FocusRing focusRingClass={classes.resumeOutline}>
+            <a
+              className={classes.downloadLink}
+              href={resumePdf}
+              download="James Thomas Davey - Resume"
+            >
+              <img alt="Download Resume" src={downloadicon} />
+            </a>
+          </FocusRing>
         </div>
         <section>
           {/* <h2 className={classes.titleHeading}>{resumeData.jobTitle}</h2> */}
           <ul className={classes.subtitleList}>
             <li>{resumeData.location}</li>
             <li>
-              <a href={`mailto:${resumeData.email}`}>
-                {resumeData.email}{" "}
-                <BiMailSend
-                  aria-label="Composes a new email"
-                  role="img"
-                  focusable="false"
-                />
-              </a>
+              <FocusRing focusRingClass="focus-ring">
+                <a href={`mailto:${resumeData.email}`}>
+                  {resumeData.email}{" "}
+                  <BiMailSend
+                    aria-label="Composes a new email"
+                    role="img"
+                    focusable="false"
+                  />
+                </a>
+              </FocusRing>
             </li>
             <li>{resumeData.phoneNumber}</li>
           </ul>
