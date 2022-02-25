@@ -94,7 +94,7 @@ const App = () => {
               <p className={classes.paragraph}>
                 I love the challenges of deconstructing unfamiliar or complex
                 interfaces into simplified operable parts, linearizing
-                two-dimentional layouts, and allowing assistive technology to
+                two-dimensional layouts, and allowing assistive technology to
                 read and interact with everything. Few things satisfy me more
                 than using a keyboard to navigate a robustly-built website with
                 the screen reader enabled.
