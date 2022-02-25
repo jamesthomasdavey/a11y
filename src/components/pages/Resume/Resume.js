@@ -37,7 +37,7 @@ const ResumePrint = () => {
           <ul className={classes.subtitleList}>
             <li>{resumeData.location}</li>
             <li>
-              <FocusRing focusRingClass="focus-ring">
+              <FocusRing focusRingClass={classes.resumeOutline}>
                 <a href={`mailto:${resumeData.email}`}>
                   {resumeData.email}{" "}
                   <BiMailSend
