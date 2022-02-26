@@ -19,7 +19,7 @@
 *** FONTS ***
 ************/
 
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 
 /************
 *** RESET ***
@@ -151,7 +151,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -165,7 +165,7 @@ table {
 
 body {
   transition: background-color 0.6s ease, color 0.6s ease;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   color: var(--darker-gray);
   font-size: 16px;
   line-height: 24px;
