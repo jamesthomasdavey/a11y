@@ -8,6 +8,10 @@
   background-color: var(--light-black);
 }
 
+.wrapper.darkMode ::selection {
+  background-color: var(--dark-selection-color);
+}
+
 .wrapperInner {
   width: 100%;
   margin: 0 auto;
