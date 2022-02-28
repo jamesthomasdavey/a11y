@@ -20,6 +20,11 @@ const Accordion = ({ darkModeEnabled }) => {
     //     "An accessible component library is paramount for a consistent user experience. Even a perfectly semantic page structure can quickly be nullified if users cannot understand or operate the components within it. By focusing on accessible building blocks of all sizes, I can help you build a seamless experience for all users.",
     // },
     {
+      heading: "Planning",
+      paragraph:
+        "Accessibility tends to show up late; the topic is often ignored during tech education and is often an afterthought in web and app projects. Implementing accessibility can therefore appear to be a daunting task, but my hope is to ease this process as much as possible and eventually rethink how we approach design and development by including accessibility in the earliest possible stages.",
+    },
+    {
       heading: "Handoff Annotations",
       paragraph:
         "When handing designs off to a development team, it's best not to make them guess which semantics and attributes they need for properly exposing information for assistive technology users. I can add comments to your wireframes conveying exactly that, removing any guesswork.",

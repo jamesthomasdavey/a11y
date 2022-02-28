@@ -92,14 +92,14 @@ const App = () => {
                 I do web accessibility.
               </h2>
               <p className={classes.paragraph}>
-                I love the challenges of deconstructing unfamiliar or complex
-                interfaces into simplified operable parts, linearizing
-                two-dimensional layouts, and allowing assistive technology to
-                read and interact with everything. Few things satisfy me more
-                than using a keyboard to navigate a robustly-built website with
-                the screen reader enabled.
+                Above all else, web accessibility is about making your site
+                usable for as many people as possible. In our modern age, access
+                to technology and the Internet is a human right, regardless of
+                one's abilities. This is easy to overlook. It's fun to build new
+                apps and websites, but it's less fun to learn that many people
+                aren't able to use them. So how do we address this?
               </p>
-              <p className={classes.paragraph}>
+              {/* <p className={classes.paragraph}>
                 Accessibility tends to show up late; the topic is often ignored
                 during tech education and is often an afterthought in web and
                 app projects. Implementing accessibility can therefore appear to
@@ -107,8 +107,8 @@ const App = () => {
                 as possible and eventually rethink how we approach design and
                 development by including accessibility in the earliest possible
                 stages.
-                {/* It's never too late to work on accessibility, but it's never too early either. */}
-              </p>
+                It's never too late to work on accessibility, but it's never too early either.
+              </p> */}
             </section>
             <section>
               <h2
