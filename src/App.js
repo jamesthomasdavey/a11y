@@ -68,7 +68,7 @@ const App = () => {
               <strong>Senior Accessibility Engineer</strong> developing
               first-party restaurant ordering platforms, I have previously
               contributed to hundreds of websites and apps in other spaces such
-              as healthcare, entertainment, retail, and software. For more about
+              as healthcare, finance, retail, and entertainment. For more about
               my skills and qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
                 <Link to="/resume" target="_blank" rel="noreferrer">
