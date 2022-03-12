@@ -2,7 +2,7 @@
   top: 22px;
   right: 36px;
   display: block;
-  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  /* transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease; */
   position: absolute;
   width: 75px;
   height: 40px;
@@ -35,7 +35,7 @@
 }
 
 .circle {
-  transition: 0.3s margin ease;
+  /* transition: 0.3s margin ease; */
   display: block;
   height: 32.5px;
   width: 32.5px;

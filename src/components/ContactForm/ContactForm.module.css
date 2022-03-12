@@ -32,7 +32,7 @@ form.loading {
   font-size: 16px;
   font-family: "Atkinson Hyperlegible", sans-serif;
   color: var(--darker-gray);
-  transition: background-color 0.6s ease, border-color 0.6s ease;
+  /* transition: background-color 0.6s ease, border-color 0.6s ease; */
 }
 
 .input.darkMode {
@@ -52,7 +52,7 @@ form.loading {
   cursor: pointer;
   position: relative;
   margin: 1.5rem 0 0.75rem 0;
-  transition: color 0.6s ease, background-color 0.6s ease;
+  /* transition: color 0.6s ease, background-color 0.6s ease; */
   color: var(--black);
 }
 
