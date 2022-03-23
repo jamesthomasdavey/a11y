@@ -4,14 +4,16 @@ import { FocusRing } from "@react-aria/focus";
 
 import classes from "./DarkModeSwitch.module.css";
 
-const DarkModeSwitch = ({ on, toggle }) => {
+const DarkModeSwitch = ({ on, toggle, hasBeenToggled }) => {
   return (
     <header>
       <FocusRing focusRingClass="focus-ring">
         <button
-          className={[classes.wrapper, on ? classes.dark : classes.light].join(
-            " "
-          )}
+          className={[
+            classes.wrapper,
+            on ? classes.dark : classes.light,
+            hasBeenToggled ? classes.toggled : "",
+          ].join(" ")}
           onClick={toggle}
           role="switch"
           aria-checked={on ? "true" : "false"}
@@ -19,9 +21,11 @@ const DarkModeSwitch = ({ on, toggle }) => {
         >
           <span
             aria-hidden="true"
-            className={[classes.circle, on ? classes.right : classes.left].join(
-              " "
-            )}
+            className={[
+              classes.circle,
+              on ? classes.right : classes.left,
+              hasBeenToggled ? classes.toggled : "",
+            ].join(" ")}
           ></span>
           <div className={classes.moonWrapper}>
             <BsFillMoonStarsFill

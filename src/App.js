@@ -19,6 +19,7 @@ import Resume from "./components/pages/Resume/Resume";
 
 const App = () => {
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
+  const [hasBeenToggled, setHasBeenToggled] = useState(false);
 
   // run on page load
   useEffect(() => {
@@ -43,6 +44,8 @@ const App = () => {
 
   const toggleDarkMode = () => {
     localStorage.setItem("darkModeEnabled", !darkModeEnabled);
+    document.querySelector("body").classList.add("toggled");
+    setHasBeenToggled(true);
     setDarkModeEnabled(!darkModeEnabled);
   };
 
@@ -51,7 +54,11 @@ const App = () => {
       <Switch>
         <Route exact path="/resume" component={Resume} />
         <Route path="/">
-          <DarkModeSwitch on={darkModeEnabled} toggle={toggleDarkMode} />
+          <DarkModeSwitch
+            on={darkModeEnabled}
+            toggle={toggleDarkMode}
+            hasBeenToggled={hasBeenToggled}
+          />
           <main
             className={[
               classes.main,
