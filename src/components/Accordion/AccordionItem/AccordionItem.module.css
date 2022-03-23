@@ -1,6 +1,6 @@
 .wrapper {
   margin-bottom: 1rem;
-  transition: background-color 0.6s ease;
+  /* transition: background-color 0.6s ease; */
 }
 
 .wrapper.color0,
@@ -57,7 +57,7 @@
   margin: 0;
   cursor: pointer;
   position: relative;
-  transition: color 0.6s ease, background-color 0.6s ease;
+  /* transition: color 0.6s ease, background-color 0.6s ease; */
   text-align: left;
   color: var(--black);
 }
@@ -106,7 +106,7 @@
 .paragraph {
   padding: 1.5rem 2rem 2rem 2rem;
   color: var(--light-black);
-  transition: color 0.6s ease;
+  /* transition: color 0.6s ease; */
 }
 
 .paragraph.darkMode {
