@@ -11,8 +11,8 @@
   --gray: #999999;
   --dark-white: #ececec;
   --white: #ffffff;
-  --selection-color: #ffff00;
-  --dark-selection-color: #003580;
+  --selection-color: #003580;
+  --dark-selection-color: #ffff00;
 }
 
 /************
@@ -202,6 +202,7 @@ body.toggled footer {
 
 ::selection {
   background-color: var(--selection-color);
+  color: var(--white);
 }
 
 strong {

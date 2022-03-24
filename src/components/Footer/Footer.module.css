@@ -10,6 +10,7 @@
 
 .wrapper.darkMode ::selection {
   background-color: var(--dark-selection-color);
+  color: var(--black);
 }
 
 .wrapperInner {

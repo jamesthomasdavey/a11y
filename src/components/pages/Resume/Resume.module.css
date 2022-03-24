@@ -18,7 +18,8 @@
 }
 
 .wrapper ::selection {
-  background-color: yellow;
+  background-color: var(--selection-color);
+  color: var(--white);
 }
 
 .wrapper__inner {
@@ -49,6 +50,7 @@
   top: 50px;
   right: 92px;
   padding: 6px 6px 0px 6px;
+  user-select: none;
 }
 
 .downloadLink > img {
