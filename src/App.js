@@ -19,7 +19,7 @@ import Resume from "./components/pages/Resume/Resume";
 
 const App = () => {
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
-  const [hasBeenToggled, setHasBeenToggled] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
 
   // run on page load
   useEffect(() => {
@@ -33,6 +33,9 @@ const App = () => {
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setDarkModeEnabled(true);
     }
+    setTimeout(() => {
+      setHasLoaded(true);
+    }, 50);
   }, []);
 
   // run when something changes
@@ -45,7 +48,6 @@ const App = () => {
   const toggleDarkMode = () => {
     localStorage.setItem("darkModeEnabled", !darkModeEnabled);
     document.querySelector("body").classList.add("toggled");
-    setHasBeenToggled(true);
     setDarkModeEnabled(!darkModeEnabled);
   };
 
@@ -57,7 +59,7 @@ const App = () => {
           <DarkModeSwitch
             on={darkModeEnabled}
             toggle={toggleDarkMode}
-            hasBeenToggled={hasBeenToggled}
+            hasLoaded={hasLoaded}
           />
           <main
             className={[
@@ -127,7 +129,10 @@ const App = () => {
               >
                 Things I can do.
               </h2>
-              <Accordion darkModeEnabled={darkModeEnabled} />
+              <Accordion
+                darkModeEnabled={darkModeEnabled}
+                hasLoaded={hasLoaded}
+              />
             </section>
             <section>
               <h2
@@ -177,7 +182,10 @@ const App = () => {
                 </FocusRing>
                 , or send a message using the form below:
               </p>
-              <ContactForm darkModeEnabled={darkModeEnabled} />
+              <ContactForm
+                darkModeEnabled={darkModeEnabled}
+                hasLoaded={hasLoaded}
+              />
             </section>
           </main>
           <Footer darkModeEnabled={darkModeEnabled} />

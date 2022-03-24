@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.wrapper.hasBeenToggled {
+.wrapper.loaded {
   transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -45,7 +45,7 @@
   border-radius: 50%;
 }
 
-.circle.toggled {
+.circle.loaded {
   transition: 0.3s margin ease;
 }
 

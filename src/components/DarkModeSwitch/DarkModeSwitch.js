@@ -4,7 +4,7 @@ import { FocusRing } from "@react-aria/focus";
 
 import classes from "./DarkModeSwitch.module.css";
 
-const DarkModeSwitch = ({ on, toggle, hasBeenToggled }) => {
+const DarkModeSwitch = ({ on, toggle, hasLoaded }) => {
   return (
     <header>
       <FocusRing focusRingClass="focus-ring">
@@ -12,7 +12,7 @@ const DarkModeSwitch = ({ on, toggle, hasBeenToggled }) => {
           className={[
             classes.wrapper,
             on ? classes.dark : classes.light,
-            hasBeenToggled ? classes.toggled : "",
+            hasLoaded ? classes.loaded : "",
           ].join(" ")}
           onClick={toggle}
           role="switch"
@@ -24,7 +24,7 @@ const DarkModeSwitch = ({ on, toggle, hasBeenToggled }) => {
             className={[
               classes.circle,
               on ? classes.right : classes.left,
-              hasBeenToggled ? classes.toggled : "",
+              hasLoaded ? classes.loaded : "",
             ].join(" ")}
           ></span>
           <div className={classes.moonWrapper}>

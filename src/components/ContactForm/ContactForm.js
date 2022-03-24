@@ -339,6 +339,7 @@ class ContactForm extends Component {
               className={[
                 classes.sendButton,
                 this.props.darkModeEnabled ? classes.darkMode : "",
+                this.props.hasLoaded ? classes.loaded : "",
               ].join(" ")}
               aria-describedby="redirect-warning"
             >

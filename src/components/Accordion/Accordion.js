@@ -2,7 +2,7 @@ import React from "react";
 
 import AccordionItem from "./AccordionItem/AccordionItem";
 
-const Accordion = ({ darkModeEnabled }) => {
+const Accordion = ({ darkModeEnabled, hasLoaded }) => {
   const thingsICanDo = [
     {
       heading: "Testing",
@@ -46,6 +46,7 @@ const Accordion = ({ darkModeEnabled }) => {
             paragraph={thing.paragraph}
             key={i}
             index={i}
+            hasLoaded={hasLoaded}
           />
         );
       })}

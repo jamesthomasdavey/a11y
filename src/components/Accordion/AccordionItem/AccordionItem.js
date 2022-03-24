@@ -5,7 +5,13 @@ import { FocusRing } from "@react-aria/focus";
 
 import classes from "./AccordionItem.module.css";
 
-const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
+const AccordionItem = ({
+  index,
+  darkModeEnabled,
+  heading,
+  paragraph,
+  hasLoaded,
+}) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
     <li
@@ -25,6 +31,7 @@ const AccordionItem = ({ index, darkModeEnabled, heading, paragraph }) => {
               classes.button,
               darkModeEnabled ? classes.darkMode : classes[`color${index}`],
               isExpanded ? classes.expanded : "",
+              hasLoaded ? classes.loaded : "",
             ].join(" ")}
             aria-controls={heading.split(" ").join("-").toLowerCase + "-panel"}
             {...getToggleProps()}
