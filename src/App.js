@@ -149,8 +149,8 @@ const App = () => {
                   ].join(" ")}
                   aria-hidden="true"
                 >
-                  👋
-                </span>{" "}
+                  👋{" "}
+                </span>
                 Say hello!
               </h2>
               <p className={classes.paragraph}>

@@ -26,6 +26,10 @@
   margin-bottom: 1rem;
 }
 
+.emoji {
+  user-select: none;
+}
+
 .emoji.darkMode {
   filter: grayscale(33%);
 }
