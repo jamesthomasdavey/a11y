@@ -2,7 +2,7 @@
 
 .resumeOutline {
   outline-offset: 1px;
-  outline: 3px solid var(--dark-selection-color);
+  outline: 3px solid var(--selection-color);
 }
 
 .wrapper {
