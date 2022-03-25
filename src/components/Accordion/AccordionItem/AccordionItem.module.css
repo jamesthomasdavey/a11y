@@ -77,7 +77,8 @@
   width: 100%;
 }
 
-.button.darkMode {
+.button.darkMode,
+.paragraph.darkMode {
   color: var(--white);
   background-color: var(--light-black);
 }
