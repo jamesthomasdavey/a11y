@@ -62,6 +62,8 @@ const AccordionItem = ({
           className={[
             classes.paragraph,
             darkModeEnabled ? classes.darkMode : "",
+            !isExpanded ? classes.collapsed : "",
+            classes[`color${index}`],
           ].join(" ")}
         >
           {paragraph}

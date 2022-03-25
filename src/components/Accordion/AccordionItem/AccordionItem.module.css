@@ -1,42 +1,45 @@
 .wrapper {
   margin-bottom: 1rem;
-  /* transition: background-color 0.6s ease; */
 }
 
-.wrapper.color0,
-.button.color0 {
+.button.color0,
+.paragraph.color0 {
   background-color: #bdeae5;
 }
+
 .button.color0:hover {
   background-color: #a2e1db;
 }
 
-.wrapper.color1,
-.button.color1 {
+.button.color1,
+.paragraph.color1 {
   background-color: #ffd6d2;
 }
+
 .button.color1:hover {
   background-color: #ffc5bf;
 }
 
-.wrapper.color2,
-.button.color2 {
+.button.color2,
+.paragraph.color2 {
   background-color: #fcfcc3;
 }
+
 .button.color2:hover {
   background-color: #ededb2;
 }
 
-.wrapper.color3,
-.button.color3 {
+.button.color3,
+.paragraph.color3 {
   background-color: #c4e7ed;
 }
+
 .button.color3:hover {
   background-color: #abdee6;
 }
 
-.wrapper.color4,
-.button.color4 {
+.button.color4,
+.paragraph.color4 {
   background-color: #ffe8c8;
 }
 .button.color4:hover {
@@ -57,13 +60,13 @@
   margin: 0;
   cursor: pointer;
   position: relative;
-  /* transition: color 0.6s ease, background-color 0.6s ease; */
   text-align: left;
   color: var(--black);
+  z-index: 9999;
 }
 
 .button.loaded {
-  transition: background-color 0.6s ease, color 0.6s ease;
+  transition: width 0.5s ease, background-color 0.6s ease, color 0.6s ease;
 }
 
 .button:hover {
@@ -110,11 +113,16 @@
 .paragraph {
   padding: 1.5rem 2rem 2rem 2rem;
   color: var(--light-black);
-  /* transition: color 0.6s ease; */
+  transition: opacity 0.6s ease;
 }
 
 .paragraph.darkMode {
   color: var(--white);
+}
+
+.paragraph.collapsed {
+  opacity: 0;
+  /* transition: opacity 0.6s ease; */
 }
 
 @media (min-width: 540px) {
