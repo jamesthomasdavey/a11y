@@ -108,8 +108,8 @@
 }
 
 .chevron.down {
-  /* transform: rotate(180deg); */
-  transform: scale(1, -1);
+  transform: rotate(180deg);
+  /* transform: scale(1, -1); */
 }
 
 .paragraph {
