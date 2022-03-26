@@ -176,8 +176,6 @@ class ContactForm extends Component {
         ""
       ) : (
         <span
-          aria-live="polite"
-          aria-atomic="true"
           id="message-characters-remaining"
           className={[
             classes.secondaryInfo,
