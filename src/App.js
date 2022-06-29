@@ -74,12 +74,11 @@ const App = () => {
               Washington, doing my part to build an inclusive web.
             </p>
             <p className={classes.paragraph}>
-              Currently working full-time as a{" "}
-              <strong>Senior Accessibility Engineer</strong> developing
-              first-party restaurant ordering platforms, I have previously
-              contributed to hundreds of websites and apps in other spaces such
-              as healthcare, finance, retail, and entertainment. For more about
-              my skills and qualifications,{" "}
+              Currently working full-time as an{" "}
+              <strong>Accessibility Architect</strong> at Pluto TV, I have
+              previously contributed to hundreds of websites and apps in other
+              spaces such as healthcare, food, retail, and finance. For more
+              about my skills and qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
                 <Link to="/resume" target="_blank" rel="noreferrer">
                   check out my resume{" "}
