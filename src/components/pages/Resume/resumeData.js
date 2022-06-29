@@ -7,7 +7,7 @@ const resumeData = {
     "Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.",
   workExperiences: [
     {
-      dates: "7/2021 - Present",
+      dates: "8/2021 - 5/2022",
       company: "Lunchbox Technologies",
       title: "Senior Accessibility Engineer",
       summary:
