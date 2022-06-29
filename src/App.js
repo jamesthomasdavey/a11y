@@ -70,15 +70,15 @@ const App = () => {
             <Heading darkModeEnabled={darkModeEnabled} />
             <p className={classes.paragraph}>
               I am a <strong>Web Developer</strong> and{" "}
-              <strong>Accessibility Specialist</strong> based in Seattle,
-              Washington, doing my part to build an inclusive web.
+              <strong>Digital Accessibility Specialist</strong> based in
+              Seattle, Washington, doing my part to build an inclusive web.
             </p>
             <p className={classes.paragraph}>
               Currently working full-time as an{" "}
-              <strong>Accessibility Architect</strong> at Pluto TV, I have
-              previously contributed to hundreds of websites and apps in other
-              spaces such as healthcare, food, retail, and finance. For more
-              about my skills and qualifications,{" "}
+              <strong>Accessibility Architect</strong> in the streaming and
+              entertainment industry, I have previously contributed to hundreds
+              of websites and apps in other spaces such as healthcare, food,
+              retail, and finance. For more about my skills and qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
                 <Link to="/resume" target="_blank" rel="noreferrer">
                   check out my resume{" "}
