@@ -17,7 +17,7 @@ const DarkModeSwitch = ({ on, toggle, hasLoaded }) => {
           onClick={toggle}
           role="switch"
           aria-checked={on ? "true" : "false"}
-          aria-label="Dark mode"
+          aria-label="Use dark mode"
         >
           <span
             aria-hidden="true"
