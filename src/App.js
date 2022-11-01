@@ -70,8 +70,8 @@ const App = () => {
             <Heading darkModeEnabled={darkModeEnabled} />
             <p className={classes.paragraph}>
               I am a <strong>Web Developer</strong> and{" "}
-              <strong>Accessibility Specialist</strong> based in Seattle,
-              Washington, helping build an inclusive web.
+              <strong>Accessibility Specialist</strong> based in San Francisco,
+              California, helping build an inclusive web.
             </p>
             <p className={classes.paragraph}>
               Currently working full-time as an{" "}
