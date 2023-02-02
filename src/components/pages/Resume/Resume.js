@@ -10,7 +10,7 @@ import resumePdf from "./pdf/James Thomas Davey - Resume.pdf";
 import resumeData from "./resumeData";
 
 const ResumePrint = () => {
-  document.title = "James Davey | Resume";
+  document.title = "Resume | James Davey";
   document
     .querySelector("html")
     .setAttribute("style", "background-color: #8fd2af;");
