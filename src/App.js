@@ -16,6 +16,7 @@ import classes from "./App.module.css";
 
 // other pages
 import Resume from "./components/pages/Resume/Resume";
+// import Tooltip from "./components/pages/Library/Tooltip/Tooltip";
 
 const App = () => {
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
@@ -55,6 +56,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path="/resume" component={Resume} />
+        {/* <Route exact path="/tooltip" component={Tooltip} /> */}
         <Route path="/">
           <DarkModeSwitch
             on={darkModeEnabled}
@@ -91,6 +93,10 @@ const App = () => {
                 </Link>
               </FocusRing>
               .
+            </p>
+            <p className={classes.paragraph}>
+              Outside of work, you can find me taking photographs, reading
+              magical realism and science fiction, or nerding out in Notion.
             </p>
             <section>
               <h2

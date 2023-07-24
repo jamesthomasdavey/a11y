@@ -1,6 +1,6 @@
 const resumeData = {
   name: "James Thomas Davey",
-  location: "SF Bay Area, CA",
+  location: "Berkeley, CA",
   email: "james.t.davey@gmail.com",
   phoneNumber: "(415) 307-8703",
   summary:
