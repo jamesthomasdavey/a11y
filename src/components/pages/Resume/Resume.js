@@ -26,7 +26,7 @@ const ResumePrint = () => {
             <a
               className={classes.downloadLink}
               href={resumePdf}
-              download="James Thomas Davey - Resume"
+              download="James Davey - Resume"
             >
               <img alt="Download Resume" src={downloadicon} />
             </a>

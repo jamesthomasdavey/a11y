@@ -53,13 +53,13 @@
   user-select: none;
 }
 
-.downloadLink > img {
+.downloadLink>img {
   height: 32px;
   transition: 0.2s transform ease;
 }
 
-.downloadLink:focus > img,
-.downloadLink:hover > img {
+.downloadLink:focus>img,
+.downloadLink:hover>img {
   transform: scale(1.15);
 }
 
@@ -75,28 +75,28 @@
   margin-bottom: 40px;
 }
 
-.subtitleList > li {
+.subtitleList>li {
   display: inline-block;
 }
 
-.subtitleList > li > a {
+.subtitleList>li>a {
   color: #36845c;
   text-decoration: underline;
   font-weight: 400;
 }
 
-.subtitleList > li > a:hover {
+.subtitleList>li>a:hover {
   /* color: #36845c; */
   text-decoration: none;
 }
 
-.subtitleList > li::before {
+.subtitleList>li::before {
   content: "|";
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.subtitleList > li:first-child::before {
+.subtitleList>li:first-child::before {
   content: "";
   padding-left: 0;
   padding-right: 0;
@@ -146,17 +146,17 @@
   margin-bottom: 36px;
 }
 
-.expContent > p {
+.expContent>p {
   margin-bottom: 16px;
 }
 
-.expContent > ul > li {
+.expContent>ul>li {
   list-style-type: disc;
   margin-left: 32px;
   margin-bottom: 7px;
 }
 
-.expContent > ul > li:last-child {
+.expContent>ul>li:last-child {
   margin-bottom: 0;
 }
 
@@ -179,7 +179,7 @@
   margin-bottom: 36px;
 }
 
-.educationContent > p > span {
+.educationContent>p>span {
   display: block;
 }
 
@@ -187,13 +187,13 @@
   text-align: center;
 }
 
-.skillsList > li {
+.skillsList>li {
   color: #000000;
   display: inline-block;
   background-color: #ddf1e7;
-  padding: 4px 18px;
-  margin-left: 18px;
-  margin-right: 18px;
+  padding: 4px 16px;
+  margin-left: 16px;
+  margin-right: 16px;
   border-radius: 6px;
   font-size: 0.9rem;
   margin-bottom: 14px;
@@ -205,31 +205,38 @@
     width: 748px;
     padding: 48px 64px;
   }
-  .subtitleList > li::before {
+
+  .subtitleList>li::before {
     content: "|";
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .expContent {
     margin-left: 0;
   }
+
   .educationContent {
     margin-left: 200px;
   }
 }
+
 @media (max-width: 768px) {
   .wrapper__inner {
     width: 634px;
     padding: 48px 54px;
   }
+
   .nameHeading {
     text-align: center;
     margin-bottom: 8px;
   }
+
   .downloadLinkWrapper {
     text-align: center;
     margin-bottom: 36px;
   }
+
   .downloadLink {
     position: relative;
     top: 0;
@@ -237,12 +244,15 @@
     margin: 0 auto;
     display: inline-block;
   }
-  .downloadLink > img {
+
+  .downloadLink>img {
     height: 24px;
   }
+
   .titleHeading {
     text-align: center;
   }
+
   .subtitleList {
     text-align: center;
   }
@@ -253,29 +263,36 @@
     width: 554px;
     padding: 48px 46px;
   }
-  .subtitleList > li::before {
+
+  .subtitleList>li::before {
     content: "";
     padding-left: 0;
     padding-right: 0;
   }
-  .subtitleList > li {
+
+  .subtitleList>li {
     display: block;
   }
+
   .subHeading {
     text-align: center;
   }
+
   .dateHeading {
     position: relative;
   }
+
   .roleHeading {
     padding-left: 0;
     display: block;
   }
+
   .educationHeading {
     position: relative;
     top: 0;
     margin-bottom: 28px;
   }
+
   .educationContent {
     margin-left: 0;
   }

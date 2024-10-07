@@ -1,56 +1,63 @@
 const resumeData = {
-  name: "James Thomas Davey",
-  location: "Berkeley, CA",
+  name: "James Davey",
+  location: "San Francisco, CA",
   email: "james.t.davey@gmail.com",
   phoneNumber: "(415) 307-8703",
   summary:
-    "Digital accessibility expert with WAS and DHS Trusted Tester certifications, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.",
+    "Digital Accessibility Expert with WAS and DHS Trusted Tester certifications. Extensive experience in front-end web development and WCAG conformance, with a strong focus on enhancing digital accessibility through education and collaboration across teams.",
   workExperiences: [
+    {
+      dates: "6/2022 - 9/2024",
+      company: "Pluto TV",
+      title: "Senior Accessibility Architect (Contract)",
+      responsibilities: [
+        "Led accessibility remediation efforts and developed comprehensive accessibility requirements for Pluto TV’s Web, Roku, and Android TV platforms.",
+        "Managed and prioritized backlogs, facilitating meetings with application stakeholders to address and resolve accessibility issues.",
+        "Reviewed and annotated design prototypes to ensure compliance with accessibility standards before development.",
+        "Defined and documented new text-to-speech standards, improving screen reader experiences across multiple TV platforms.",
+        "Oversaw accessibility compliance for Paramount’s extensive network of refreshed brand sites, including MTV, Showtime, Nick, and several others.",
+      ]
+    },
     {
       dates: "8/2021 - 5/2022",
       company: "Lunchbox Technologies",
       title: "Senior Accessibility Engineer",
-      summary:
-        "Responsible for the accessibility implementation of web ordering platforms for thousands of restaurants, kitchens, and marketplaces.",
       responsibilities: [
-        "Wrote and managed a backlog of hundreds of accessibility related Jira tickets that precisely described accessibility issues and prescribed fixes for engineers.",
-        "Established action plans for at-risk sites, which prioritized defects based on their tractability, severity, noticeability, and frequency across our platforms.",
+        "Managed a substantial backlog of accessibility-related Jira tickets, providing detailed descriptions and solutions for engineering teams.",
+        "Developed and implemented action plans for high-priority sites, evaluating defects based on their impact, severity, and visibility across platforms.",
+        "Collaborated with cross-functional teams to ensure timely and effective resolution of accessibility issues.",
       ],
     },
     {
       dates: "1/2021 - 7/2021",
       company: "CVS Health",
       title: "Accessibility Engineer Lead (Contract)",
-      summary:
-        "Responsible for coordinating and conducting accessibility testing, remediation, education sessions, and design reviews across several internal product teams.",
       responsibilities: [
-        "Developed accessible components and usage guidelines for the component library, directly improving accessibility in several web applications.",
-        "Set internal accessibility standards for data visualization methods such as complex grids, charts, graphs, and data tables.",
+        "Coordinated and executed accessibility testing, remediation, and educational initiatives across multiple internal product teams.",
+        "Designed and implemented accessible components and established usage guidelines, enhancing accessibility across various web applications.",
+        "Developed and enforced internal standards for accessible data visualization, including grids, charts, graphs, and data tables.",
       ],
     },
     {
       dates: "7/2020 - 1/2021",
       company: "Kaiser Permanente",
       title: "Accessibility Design Specialist (Contract)",
-      summary:
-        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and site-wide, to be used by millions of members.",
       responsibilities: [
-        "Collaborated with the design team to maximize accessibility and usability of components before handoff to the development team.",
-        "Defined new accessibility optimizations for Kaiser's design system documentation, upholding their standards as a healthcare industry leader.",
+        "Conducted thorough design reviews and risk assessments for Kaiser’s high-traffic web components, ensuring accessibility for millions of users.",
+        "Worked closely with design teams to optimize accessibility and usability before components were handed off to development.",
+        "Enhanced Kaiser’s design system documentation with new accessibility guidelines, maintaining high standards for industry-leading healthcare design.",
       ],
     },
     {
       dates: "3/2019 - 1/2021",
       company: "Level Access",
       title: "Senior Accessibility Analyst",
-      summary:
-        "Responsible for conducting accessibility audits to comply with legal standards, helping organizations to minimize risk for their websites and mobile applications.",
       responsibilities: [
         //and showcase their accessibility awareness.
-        "Oversaw long-term projects and maintained strong client relationships, resulting in multiple future sales and service product renewals.",
-        // "Led remediation efforts to meet WCAG success criteria, providing guidance ranging from high-level direction to code-level recommendations.",
-        "Authored VPAT documents following comprehensive audits within tight deadlines, enabling organizations to sell into the federal government.",
-        // "Conducted training sessions for developers and designers from Fortune 500 companies.", // of varying industries?
+        "Performed comprehensive accessibility audits to ensure compliance with legal standards, guiding organizations to minimize digital risk.",
+        "Managed long-term projects and cultivated strong client relationships, resulting in significant sales growth and service renewals.",
+        "Led remediation projects to achieve WCAG success criteria, offering guidance from strategic direction to detailed code-level recommendations.",
+        "Authored VPAT documents and conducted training sessions for developers and designers across Fortune 500 companies.",
       ],
     },
     // {
@@ -83,17 +90,17 @@ const resumeData = {
   },
   technicalSkills: [
     "WCAG",
-    "Section 508",
     "ADA",
+    "Section 508",
     "Assistive Technology",
-    "Inclusive Design",
+    "Figma",
     "HTML",
     "CSS",
     "JavaScript",
     "React",
     "Git",
-    "Rally",
-    "Jira",
+    "Atlassian",
+    "Notion",
   ],
 };
 
