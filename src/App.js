@@ -76,10 +76,9 @@ const App = () => {
               Francisco Bay Area, helping build an inclusive web.
             </p>
             <p className={classes.paragraph}>
-              Currently working full-time as a{" "}
-              <strong>Senior Accessibility Architect</strong> in the streaming
-              and entertainment industry, I have previously contributed to
-              hundreds of websites and apps in other spaces such as healthcare,
+              Most recently, I served as a Senior Accessibility Architect in the streaming
+              and entertainment industry, driving accessibility improvements across Web and TV applications. Over my career, I have contributed to
+              hundreds of websites and apps in industries such as healthcare,
               food, retail, and finance. For more about my skills and
               qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
