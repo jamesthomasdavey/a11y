@@ -4,8 +4,8 @@ import { FocusRing } from "@react-aria/focus";
 
 import classes from "./Resume.module.css";
 
-// import downloadicon from "./img/downloadicon.svg";
-// import resumePdf from "./pdf/James Thomas Davey - Resume.pdf";
+import downloadicon from "./img/downloadicon.svg";
+import resumePdf from "./pdf/James Thomas Davey - Resume.pdf";
 
 import resumeData from "./resumeData";
 
