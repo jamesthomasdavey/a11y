@@ -21,7 +21,7 @@ const ResumePrint = () => {
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
         <h1 className={classes.nameHeading}>{resumeData.name}</h1>
-        {/* <div className={classes.downloadLinkWrapper}>
+        <div className={classes.downloadLinkWrapper}>
           <FocusRing focusRingClass={classes.resumeOutline}>
             <a
               className={classes.downloadLink}
@@ -31,7 +31,7 @@ const ResumePrint = () => {
               <img alt="Download Resume" src={downloadicon} />
             </a>
           </FocusRing>
-        </div> */}
+        </div>
         <section>
           {/* <h2 className={classes.titleHeading}>{resumeData.jobTitle}</h2> */}
           <ul className={classes.subtitleList}>
