@@ -4,7 +4,7 @@ const resumeData = {
   email: "james.t.davey@gmail.com",
   phoneNumber: "(415) 307-8703",
   summary:
-    "Digital Accessibility Expert with WAS and DHS Trusted Tester certifications. Extensive experience in front-end web development and WCAG conformance, with a strong focus on enhancing digital accessibility through education and collaboration across teams.",
+    "Digital Accessibility Expert with WAS and DHS Trusted Tester certifications. Skilled at breaking down complex accessibility concepts and working closely with teams to implement practical, effective solutions. Extensive experience in front-end web development and WCAG conformance, with a reputation for consistent delivery and fostering collaboration with developers and designers.",
   workExperiences: [
     {
       dates: "6/2022 - 9/2024",
