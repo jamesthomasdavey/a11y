@@ -4,16 +4,16 @@ const resumeData = {
   email: "james.t.davey@gmail.com",
   phoneNumber: "(415) 307-8703",
   summary:
-    "Digital Accessibility Expert with WAS and DHS Trusted Tester certifications. Skilled at breaking down complex accessibility concepts and working closely with teams to implement practical, effective solutions. Extensive experience in front-end web development and WCAG conformance, with a reputation for consistent delivery and fostering collaboration with developers and designers.",
+    "Digital Accessibility Expert (WAS, DHS Trusted Tester) skilled at simplifying complex accessibility concepts and guiding teams to implement practical, effective solutions. Extensive experience in front-end web development and WCAG conformance, with a strong focus on enabling developers and designers to build accessible, user-friendly interfaces.",
   workExperiences: [
     {
       dates: "6/2022 - 9/2024",
       company: "Pluto TV",
       title: "Senior Accessibility Architect (Contract)",
       responsibilities: [
-        "Led accessibility remediation efforts and developed comprehensive accessibility requirements for Pluto TV’s Web, Roku, and Android TV platforms.",
-        "Managed and prioritized backlogs, facilitating meetings with application stakeholders to address and resolve accessibility issues.",
-        "Reviewed and annotated design prototypes to ensure compliance with accessibility standards before development.",
+        "Led accessibility remediation efforts and created comprehensive requirements for Pluto TV’s Web, Roku, and Android TV platforms, achieving significant improvements across new and existing components.",
+        "Managed backlogs and led meetings with stakeholders to prioritize and resolve accessibility bugs and tasks.",
+        "Reviewed and annotated design prototypes, ensuring WCAG 2.2 standards were met prior to development.",
         "Defined and documented new text-to-speech standards, improving screen reader experiences across multiple TV platforms.",
         "Oversaw accessibility compliance for Paramount’s extensive network of refreshed brand sites, including MTV, Showtime, Nick, and several others.",
       ]
@@ -23,9 +23,9 @@ const resumeData = {
       company: "Lunchbox Technologies",
       title: "Senior Accessibility Engineer",
       responsibilities: [
-        "Managed a substantial backlog of accessibility-related Jira tickets, providing detailed descriptions and solutions for engineering teams.",
-        "Developed and implemented action plans for high-priority sites, evaluating defects based on their impact, severity, and visibility across platforms.",
-        "Collaborated with cross-functional teams to ensure timely and effective resolution of accessibility issues.",
+        "Managed a large backlog of accessibility-related Jira tickets, providing detailed descriptions and solutions for engineering teams.",
+        "Planned and executed remediation for high-priority sites, evaluating defects by impact, severity, and visibility across platforms.",
+        "Wrote and pushed React code to fix accessibility issues, working directly with teams to get fixes deployed.",
       ],
     },
     {
@@ -34,8 +34,8 @@ const resumeData = {
       title: "Accessibility Engineer Lead (Contract)",
       responsibilities: [
         "Coordinated and executed accessibility testing, remediation, and educational initiatives across multiple internal product teams.",
-        "Designed and implemented accessible components and established usage guidelines, enhancing accessibility across various web applications.",
-        "Developed and enforced internal standards for accessible data visualization, including grids, charts, graphs, and data tables.",
+        "Improved accessibility in the component library by advising designers, supporting developers, and writing usage guidelines for inclusive applications.",
+        "Established and enforced internal standards for accessible data visualization, including grids, charts, graphs, and data tables.",
       ],
     },
     {
@@ -44,7 +44,7 @@ const resumeData = {
       title: "Accessibility Design Specialist (Contract)",
       responsibilities: [
         "Conducted thorough design reviews and risk assessments for Kaiser’s high-traffic web components, ensuring accessibility for millions of users.",
-        "Worked closely with design teams to optimize accessibility and usability before components were handed off to development.",
+        "Partnered with design teams to optimize accessibility and usability during the design phase, streamlining handoff to developers.",
         "Enhanced Kaiser’s design system documentation with new accessibility guidelines, maintaining high standards for industry-leading healthcare design.",
       ],
     },
