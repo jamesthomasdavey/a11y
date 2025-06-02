@@ -94,7 +94,7 @@ const App = () => {
               .
             </p>
             <p className={classes.paragraph}>
-              Outside of work, you can find me taking photographs, reading
+              Outside of work, you can find me drawing, reading
               magical realism and science fiction, or nerding out in Notion.
             </p>
             <section>
