@@ -67,7 +67,7 @@ const resumeData = {
         //and showcase their accessibility awareness.
         "Performed comprehensive accessibility audits to ensure compliance with legal standards, guiding organizations to minimize digital risk.",
         "Managed long-term projects and cultivated strong client relationships, resulting in significant sales growth and service renewals.",
-        "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
+        // "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
         "Authored VPAT documents and conducted training sessions for developers and designers across Fortune 500 companies.",
         "Served as an Accessibility Design Specialist on a Kaiser Permanente contract, conducting in-depth design reviews for high-traffic web components and guiding UX teams on accessibility best practices.",
       ],
