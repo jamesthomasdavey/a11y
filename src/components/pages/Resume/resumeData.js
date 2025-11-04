@@ -14,7 +14,7 @@ const resumeData = {
         "Oversee accessibility testing and remediation for 50+ high-traffic tourism websites, including many official city and state destinations, ensuring WCAG 2.2 compliance.",
         "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
         "Collaborate with design and development teams to build accessibility into new projects, adding detailed annotations in Figma and QA-ing implemented fixes.",
-        "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry."
+        "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry.",
       ]
     },
     {
@@ -49,16 +49,16 @@ const resumeData = {
         "Established and enforced internal standards for accessible data visualization, including grids, charts, graphs, and data tables.",
       ],
     },
-    {
-      dates: "7/2020 - 1/2021",
-      company: "Kaiser Permanente",
-      title: "Accessibility Design Specialist (Contract)",
-      responsibilities: [
-        "Conducted thorough design reviews and risk assessments for Kaiser’s high-traffic web components, ensuring accessibility for millions of users.",
-        "Partnered with design teams to optimize accessibility and usability during the design phase, streamlining handoff to developers.",
-        "Enhanced Kaiser’s design system documentation with new accessibility guidelines, maintaining high standards for industry-leading healthcare design.",
-      ],
-    },
+    // {
+    //   dates: "7/2020 - 1/2021",
+    //   company: "Kaiser Permanente",
+    //   title: "Accessibility Design Specialist (Contract)",
+    //   responsibilities: [
+    //     "Conducted thorough design reviews and risk assessments for Kaiser’s high-traffic web components, ensuring accessibility for millions of users.",
+    //     "Partnered with design teams to optimize accessibility and usability during the design phase, streamlining handoff to developers.",
+    //     "Enhanced Kaiser’s design system documentation with new accessibility guidelines, maintaining high standards for industry-leading healthcare design.",
+    //   ],
+    // },
     {
       dates: "3/2019 - 1/2021",
       company: "Level Access",
@@ -69,6 +69,7 @@ const resumeData = {
         "Managed long-term projects and cultivated strong client relationships, resulting in significant sales growth and service renewals.",
         // "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
         "Authored VPAT documents and conducted training sessions for developers and designers across Fortune 500 companies.",
+        "Served as an Accessibility Design Specialist on a Kaiser Permanente contract, conducting in-depth design reviews for high-traffic web components and guiding UX teams on accessibility best practices.",
       ],
     },
     // {
