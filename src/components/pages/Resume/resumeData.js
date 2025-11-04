@@ -15,12 +15,11 @@ const resumeData = {
         "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry.",
         // "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
         "Collaborate with design and development teams to build accessibility into new projects, adding detailed annotations in Figma and QA-ing implemented fixes.",
-        "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry.",
       ]
     },
     {
       dates: "6/2022 - 9/2024",
-      company: "Pluto TV",
+      company: "Paramount",
       title: "Senior Accessibility Architect (Contract)",
       responsibilities: [
         "Led accessibility remediation efforts and created comprehensive requirements for Pluto TV’s Web, Roku, and Android TV platforms, achieving significant improvements across new and existing components.",
@@ -68,7 +67,7 @@ const resumeData = {
         //and showcase their accessibility awareness.
         "Performed comprehensive accessibility audits to ensure compliance with legal standards, guiding organizations to minimize digital risk.",
         "Managed long-term projects and cultivated strong client relationships, resulting in significant sales growth and service renewals.",
-        // "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
+        "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
         "Authored VPAT documents and conducted training sessions for developers and designers across Fortune 500 companies.",
         "Served as an Accessibility Design Specialist on a Kaiser Permanente contract, conducting in-depth design reviews for high-traffic web components and guiding UX teams on accessibility best practices.",
       ],
