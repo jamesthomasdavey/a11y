@@ -12,7 +12,8 @@ const resumeData = {
       title: "Senior Digital Accessibility Specialist",
       responsibilities: [
         "Oversee accessibility testing and remediation for 50+ high-traffic tourism websites, including many official city and state destinations, ensuring WCAG 2.2 compliance.",
-        "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
+        "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry.",
+        // "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
         "Collaborate with design and development teams to build accessibility into new projects, adding detailed annotations in Figma and QA-ing implemented fixes.",
         "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry.",
       ]
