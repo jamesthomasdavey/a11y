@@ -11,7 +11,7 @@ const resumeData = {
       company: "Miles Partnership",
       title: "Senior Digital Accessibility Specialist",
       responsibilities: [
-        "Oversee accessibility testing and remediation for 50+ high-traffic tourism websites, including many official city and state destinations.",
+        "Oversee accessibility testing and remediation for 50+ high-traffic tourism websites, including many official city and state destinations, ensuring WCAG 2.2 compliance.",
         "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
         "Collaborate with design and development teams to build accessibility into new projects, adding detailed annotations in Figma and QA-ing implemented fixes.",
         "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry."
@@ -24,7 +24,7 @@ const resumeData = {
       responsibilities: [
         "Led accessibility remediation efforts and created comprehensive requirements for Pluto TV’s Web, Roku, and Android TV platforms, achieving significant improvements across new and existing components.",
         "Managed backlogs and led meetings with stakeholders to prioritize and resolve accessibility bugs and tasks.",
-        "Reviewed and annotated design prototypes, ensuring WCAG 2.2 standards were met prior to development.",
+        // "Reviewed and annotated design prototypes, ensuring WCAG 2.2 standards were met prior to development.",
         "Defined and documented new text-to-speech standards, improving screen reader experiences across multiple TV platforms.",
         "Oversaw accessibility compliance for Paramount’s extensive network of refreshed brand sites, including MTV, Showtime, Nick, and several others.",
       ]
@@ -67,7 +67,7 @@ const resumeData = {
         //and showcase their accessibility awareness.
         "Performed comprehensive accessibility audits to ensure compliance with legal standards, guiding organizations to minimize digital risk.",
         "Managed long-term projects and cultivated strong client relationships, resulting in significant sales growth and service renewals.",
-        "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
+        // "Led remediation projects to achieve WCAG compliance, offering guidance from strategic direction to detailed code-level recommendations.",
         "Authored VPAT documents and conducted training sessions for developers and designers across Fortune 500 companies.",
       ],
     },
