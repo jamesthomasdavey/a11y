@@ -7,6 +7,17 @@ const resumeData = {
     "Digital Accessibility Expert (DHS Trusted Tester) skilled at simplifying complex accessibility concepts and guiding teams to implement practical, effective solutions. Extensive experience in front-end web development and WCAG conformance, with a strong focus on enabling developers and designers to build accessible, user-friendly interfaces.",
   workExperiences: [
     {
+      dates: "7/2025 - Present",
+      company: "Miles Partnership",
+      title: "Senior Digital Accessibility Specialist",
+      responsibilities: [
+        "Oversee accessibility testing and remediation for 50+ high-traffic tourism websites, including many official city and state destinations.",
+        "Prioritize and manage large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.",
+        "Collaborate with design and development teams to build accessibility into new projects, adding detailed annotations in Figma and QA-ing implemented fixes.",
+        "Write articles on accessibility in the travel and tourism space, helping raise awareness and shape best practices across the industry."
+      ]
+    },
+    {
       dates: "6/2022 - 9/2024",
       company: "Pluto TV",
       title: "Senior Accessibility Architect (Contract)",
