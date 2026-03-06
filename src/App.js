@@ -78,7 +78,7 @@ const App = () => {
             <p className={classes.paragraph}>
               Currently, I work as a Web Accessibility Engineer at a major tech company, improving accessibility across large-scale e-commerce experiences. Over my career, I have contributed to
               hundreds of websites and apps in industries such as healthcare,
-              food delivery, streaming, and finance. For more about my skills and
+              food delivery, streaming, travel, and finance. For more about my skills and
               qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
                 <Link to="/resume" target="_blank" rel="noreferrer">
