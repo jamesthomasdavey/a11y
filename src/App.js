@@ -76,10 +76,9 @@ const App = () => {
               Francisco Bay Area, helping build an inclusive web.
             </p>
             <p className={classes.paragraph}>
-              Most recently, I served as a Senior Accessibility Architect in the streaming
-              and entertainment industry, driving accessibility improvements across Web and TV applications. Over my career, I have contributed to
+              Currently, I work as a Web Accessibility Engineer at a major tech company, improving accessibility across large-scale e-commerce experiences. Over my career, I have contributed to
               hundreds of websites and apps in industries such as healthcare,
-              food, retail, and finance. For more about my skills and
+              food delivery, streaming, and finance. For more about my skills and
               qualifications,{" "}
               <FocusRing focusRingClass="focus-ring">
                 <Link to="/resume" target="_blank" rel="noreferrer">
