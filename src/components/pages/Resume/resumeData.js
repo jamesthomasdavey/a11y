@@ -6,6 +6,14 @@ const resumeData = {
   summary:
     "Digital Accessibility Expert (DHS Trusted Tester) skilled at simplifying complex accessibility concepts and guiding teams to implement practical, effective solutions. Extensive experience in front-end web development and WCAG conformance, with a strong focus on enabling developers and designers to build accessible, user-friendly interfaces.",
   workExperiences: [
+    {
+        dates: "1/2026 - Present",
+        company: "Apple",
+        title: "Web Accessibility Engineer (Contract)",
+        responsibilities: [
+            "Write design reviews and engineering requirements for projects within Apple Online Store.",
+          ]
+    },
     // {
     //   dates: "7/2025 - 1/2026",
     //   company: "Miles Partnership",
