@@ -11,10 +11,10 @@ const resumeData = {
         company: "Apple",
         title: "Web Accessibility Engineer (Contract)",
         responsibilities: [
-            "Write design reviews and engineering requirements for projects within Apple Online Store.",
-            "Review PRs.",
-            "Act as liaison between engineering, design, and content teams to resolve accessibility issues",
-            "Prioritize and managed large volumes of accessibility fixes, providing clear code and design recommendations in a fast-paced production environment.
+            "Write accessibility design reviews and engineering requirements for projects across the high-traffic Apple Online Store.",
+            "Act as a liaison between engineering, design, and content teams to resolve complex accessibility issues and incorporate accessibility into product development.",
+            "Prioritize and provide remediation guidance for a high volume of accessibility issues, using internal Apple tools to track work and deliver clear code and design recommendations.",
+            "Write and review production code, open pull requests, and review accessibility fixes submitted by other developers."
           ]
     },
     // {
